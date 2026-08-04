@@ -3,7 +3,7 @@ from functools import partial
 import pyvista as pv
 import yaml
 
-def box_cb(box_polydata, interactive_box):
+def box_cb(box_polydata):
     """Callback function that receives the box geometry on adjustment."""
     global final_box_bounds
     # Retrieve the exact bounding coordinates [xmin, xmax, ymin, ymax, zmin, zmax]
@@ -14,7 +14,11 @@ def box_cb(box_polydata, interactive_box):
     print(f"Y Bounds: {final_box_bounds[2]:.3f} to {final_box_bounds[3]:.3f}")
     print(f"Z Bounds: {final_box_bounds[4]:.3f} to {final_box_bounds[5]:.3f}")
 
-    interactive_box.SetHandleSize(0.005) # keep handles the same size even when resized
+    #interactive_box.SetHandleSize(0.005) # keep handles the same size even when resized
+
+
+def close_plot(state):
+    plotter.close()
 
 
 if __name__ == "__main__":
@@ -67,13 +71,19 @@ if __name__ == "__main__":
         )
 
         interactive_box = plotter.add_box_widget(
-            callback=None,
+            callback=box_cb,
             bounds=target_subset.bounds,
             rotation_enabled=False
         ) # pyright: ignore[reportCallIssue]
-
-        bound_cb = partial(box_cb, interactive_box=interactive_box)
-        interactive_box.AddObserver("Interaction Event", lambda obj, event: bound_cb(interactive_box.GetPolyData()))
         interactive_box.SetHandleSize(0.005)
+
+        plotter.add_checkbox_button_widget(
+            callback=close_plot,
+            value=False,
+            position=(10,10),
+            size=40,
+            color_on='red',
+            color_off='grey'
+        ) # pyright: ignore[reportCallIssue]
 
         plotter.show()
