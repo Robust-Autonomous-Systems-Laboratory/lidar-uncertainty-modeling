@@ -1,0 +1,25 @@
+test1:
+  target1:
+    nominal_range: 25
+    size: [0.5, 0.5]
+    reflectivity: 0.80
+    # nominal target center
+    x_target: 25
+    y_target: 0
+    z_target: 0
+    # target extraction volume (visualization only)
+    x_extent: 1
+    y_extent: 1
+    z_extent: 2
+  target2:
+    nominal_range: 30
+    size: [0.5, 0.5]
+    reflectivity: 0.80
+    # nominal target center
+    x_target: 30
+    y_target: 0
+    z_target: 0
+    # target extraction volume (visualization only)
+    x_extent: 3
+    y_extent: 3
+    z_extent: 5
