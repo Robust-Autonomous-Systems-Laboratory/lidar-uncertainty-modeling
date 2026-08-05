@@ -14,7 +14,8 @@ pip install numpy
 pip install rosbags
 pip install pyvista
 pip install pyyaml
-
+pip install pyvistaqt
+pip install pyqt5
 ```
 
 ## Usage

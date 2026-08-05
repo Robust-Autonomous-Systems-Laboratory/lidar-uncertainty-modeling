@@ -88,3 +88,13 @@ class ROSPointCloudLoader:
             merged_cloud.point_data[field_name] = np.concatenate(scalar_list)
 
         return merged_cloud
+
+    def get_topics(self):
+        with AnyReader([self.bag_path]) as reader:
+            # get all topic names and msg types
+            topic_types = {conn.topic: conn.msgtype for conn in reader.connections}
+
+            print(f"topic_types Python Type: {type(topic_types)}")
+
+            for topic, msg_type in sorted(topic_types.items()):
+                print(f"Topic: {topic} | Message Type: {msg_type}")

@@ -17,10 +17,6 @@ def box_cb(box_polydata):
     #interactive_box.SetHandleSize(0.005) # keep handles the same size even when resized
 
 
-def close_plot(state):
-    plotter.close()
-
-
 if __name__ == "__main__":
     bag_file = "/home/quin/data/velodyne_test1.bag"
     topic = "/velodyne_points"  # Adjust to your topic
@@ -30,6 +26,8 @@ if __name__ == "__main__":
 
     # get the combined pointcloud of all scans per bag
     combined_scan = loader.read_clouds(topic, True)
+
+    loader.get_topics()
 
     # get test yaml locations and extract and plot only points near target
     with open('cfg/test1_target_locations.yaml','r') as yaml_file:
@@ -77,13 +75,5 @@ if __name__ == "__main__":
         ) # pyright: ignore[reportCallIssue]
         interactive_box.SetHandleSize(0.005)
 
-        plotter.add_checkbox_button_widget(
-            callback=close_plot,
-            value=False,
-            position=(10,10),
-            size=40,
-            color_on='red',
-            color_off='grey'
-        ) # pyright: ignore[reportCallIssue]
 
         plotter.show()
