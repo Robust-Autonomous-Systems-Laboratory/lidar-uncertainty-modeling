@@ -89,12 +89,13 @@ class ROSPointCloudLoader:
 
         return merged_cloud
 
-    def get_topics(self):
+    def get_pc2_topics(self):
         with AnyReader([self.bag_path]) as reader:
-            # get all topic names and msg types
-            topic_types = {conn.topic: conn.msgtype for conn in reader.connections}
+            # Collect unique topics matching PointCloud2 (works for both ROS 1 and ROS 2)
+            pc2_topics = {
+                conn.topic
+                for conn in reader.connections
+                if conn.msgtype.endswith("PointCloud2")
+            }
 
-            print(f"topic_types Python Type: {type(topic_types)}")
-
-            for topic, msg_type in sorted(topic_types.items()):
-                print(f"Topic: {topic} | Message Type: {msg_type}")
+            return sorted(pc2_topics)
