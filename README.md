@@ -16,6 +16,7 @@ pip install pyvista
 pip install pyyaml
 pip install pyvistaqt
 pip install pyqt5
+pip install pandas
 ```
 
 ## Usage
