@@ -1,0 +1,14 @@
+june_26_2026_laser_rangefinder:
+  target1:
+    nominal_range: 25
+    size: [0.5, 0.5]
+    reflectivity: 0.80
+    other_info: lidar kit
+    # apprx. target center
+    x_target: 25
+    y_target: 0
+    z_target: 0
+    # target extraction volume (visualization only)
+    x_extent: 5
+    y_extent: 5
+    z_extent: 2
