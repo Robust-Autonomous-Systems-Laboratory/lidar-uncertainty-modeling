@@ -8,7 +8,7 @@ author_profile: true
 
 <!-- MEDIUM IMAGE SECTION -->
 <div align="center">
-  <img src="/_media/ruby_krc_summer.jpeg" alt="Main Visual" style="max-width: 65%; height: auto; border-radius: 8px;">
+  <img src="{{ '/media/ruby_krc_summer.jpeg' | relative_url }}" alt="Main Visual" style="max-width: 65%; height: auto; border-radius: 8px;">
 </div>
 
 ---
