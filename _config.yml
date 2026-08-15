@@ -18,8 +18,8 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
 title                    : "Lidar Uncertainty Modeling"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : # "-"
+subtitle                 : "A guide to uncertainty sources in time of flight, automotive lidar sensors."
 name                     : "Robust Autonomous Systems Lab"
 description              : "A guide to uncertainty sources in time of flight, automotive lidar sensors."
 url                      : "https://robust-autonomous-systems-laboratory.github.io/lidar-uncertainty-modeling/"

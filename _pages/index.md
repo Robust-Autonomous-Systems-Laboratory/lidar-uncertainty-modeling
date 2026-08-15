@@ -1,14 +1,14 @@
 ---
 layout: single
-title: "Welcome to My Site"
+title: "Lidar Uncertainty Modeling"
 permalink: /
-author_profile: true
+author_profile: false
 # Optional: Set to false if you want a full-width layout without the sidebar profile
 ---
 
-<!-- MEDIUM IMAGE SECTION -->
+<!-- IMAGE SECTION -->
 <div align="center">
-  <img src="{{ '/media/ruby_krc_summer.jpeg' | relative_url }}" alt="Main Visual" style="max-width: 65%; height: auto; border-radius: 8px;">
+  <img src="{{ '/media/ruby_krc_summer.jpeg' | relative_url }}" alt="Main Visual" style="max-width: auto; height: auto; border-radius: 8px;">
 </div>
 
 ---
