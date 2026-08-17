@@ -28,7 +28,7 @@ gallery:
 
 ## Edge Effects
 
-![150 Velodyne VLP-32C scans overlaid illustrating greater range uncertainty at the left and right edges of the target](/assets/media/velodyne_25m_edge_effects.png)
+![150 Velodyne VLP-32C scans overlaid illustrating greater range uncertainty at the left and right edges of the target]({{ '/assets/media/velodyne_25m_edge_effects.png' | relative_url }})
 
 
 ## Quantum Efficiency

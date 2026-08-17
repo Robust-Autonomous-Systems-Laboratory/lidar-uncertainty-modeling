@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 classes: wide
 title: "Automotive Lidar Uncertainty Modeling"
 permalink: /
