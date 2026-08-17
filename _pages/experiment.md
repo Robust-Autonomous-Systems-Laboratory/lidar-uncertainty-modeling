@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "Experiment Configuration"
 permalink: /experiment/
 author_profile: false
