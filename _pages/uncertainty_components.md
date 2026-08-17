@@ -16,8 +16,6 @@ gallery:
     alt: "NIR image of the Robosense Ruby 128-channel beam pattern on a 0.5 x 0.5 m 80% reflective, Lambertian target"
 ---
 
-# Uncertainty Components
-
 ## Beam Shape + Divergence
 
 {% include gallery %}
