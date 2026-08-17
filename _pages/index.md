@@ -7,12 +7,12 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: "{{ '/media/ruby_krc_summer.jpeg' | relative_url }}"
-  actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
-  caption: # "Lidar evaluation at a target range"
-excerpt: "A guide to uncertainty sources in time of flight, autmotive lidar sensors in varying conditions"
+  overlay_image: /media/ruby_krc_summer.jpeg
+  # actions:
+  #   - label: "Download"
+  #     url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: ""
+excerpt: "A guide to uncertainty sources in time of flight, automotive lidar sensors in varying conditions"
 intro: 
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
