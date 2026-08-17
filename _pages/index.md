@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Lidar Uncertainty Modeling"
+title: ""
 permalink: /
 author_profile: false
 # Optional: Set to false if you want a full-width layout without the sidebar profile

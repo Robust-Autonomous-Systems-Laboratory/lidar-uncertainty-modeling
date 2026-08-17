@@ -2,7 +2,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Uncertainty Components"
+    url: /uncertainty-components/
+  - title: "Experiment Configuration"
+    url: /experiment/
