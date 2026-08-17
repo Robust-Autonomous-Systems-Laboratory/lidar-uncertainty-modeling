@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 classes: wide
 title: "Uncertainty Components of Automotive Lidar"
 permalink: /uncertainty-components/

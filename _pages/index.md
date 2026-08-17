@@ -7,11 +7,11 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/media/ruby_krc_summer.jpeg
+  overlay_image: "{{ '/media/ruby_krc_summer.jpeg' | relative_url }}"
   actions:
     - label: "Download"
       url: "https://github.com/mmistakes/minimal-mistakes/"
-  caption: "Lidar evaluation at a target range"
+  caption: # "Lidar evaluation at a target range"
 excerpt: "A guide to uncertainty sources in time of flight, autmotive lidar sensors in varying conditions"
 intro: 
   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
@@ -55,12 +55,6 @@ feature_row4:
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
----
-
-<!-- IMAGE SECTION -->
-<div align="center">
-  <img src="{{ '/media/ruby_krc_summer.jpeg' | relative_url }}" alt="Main Visual" style="max-width: auto; height: auto; border-radius: 8px;">
-</div>
 
 ---
 
