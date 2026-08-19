@@ -1,6 +1,7 @@
 ---
 layout: splash
 classes: wide
+mathjax: true
 title: "Automotive Lidar Uncertainty Modeling"
 permalink: /
 author_profile: false
@@ -69,7 +70,7 @@ Minimal Mistakes handles typography cleanly, so standard Markdown text will look
 ## Lidar Range Equation
 
 $$
-𝑃_𝑟=𝑃_𝑡∗𝜌∗cos⁡(𝜃)∗(𝜋𝐷^2)/4𝑅∗𝜂_𝑠𝑦𝑠∗𝜂_𝑎𝑡𝑚
+𝑃_𝑟=𝑃_𝑡∗\rho∗cos⁡(\Theta)∗(\pi 𝐷^2)/4𝑅∗\eta_𝑠𝑦𝑠∗\eta_𝑎𝑡𝑚
 $$
 
 - $P_r$: Received optical power [W]
@@ -81,6 +82,3 @@ $$
 - $\eta_sys$: Quantum efficency
 - $\eta_atm$: Atmospheric efficency
 
----
-
-## Subheading
