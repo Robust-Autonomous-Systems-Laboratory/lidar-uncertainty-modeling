@@ -70,7 +70,7 @@ Minimal Mistakes handles typography cleanly, so standard Markdown text will look
 ## Lidar Range Equation
 
 $$
-𝑃_𝑟=𝑃_𝑡∗\rho∗cos⁡(\Theta)∗(\pi 𝐷^2)/4𝑅∗\eta_𝑠𝑦𝑠∗\eta_𝑎𝑡𝑚
+P_r = P_t * \rho * cos(\Theta) * \frac{\pi D^2}{4R} * \eta_{sys} * \eta_{atm}
 $$
 
 - $P_r$: Received optical power [W]
@@ -79,6 +79,6 @@ $$
 - $cos(\Theta)$: Incidence angle
 - $D$: Aperature diameter [m]
 - $R$: Target range [m]
-- $\eta_sys$: Quantum efficency
-- $\eta_atm$: Atmospheric efficency
+- $\eta_{sys}$: Quantum efficency
+- $\eta_{atm}$: Atmospheric efficency
 
