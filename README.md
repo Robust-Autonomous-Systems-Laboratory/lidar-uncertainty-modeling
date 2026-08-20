@@ -9,14 +9,15 @@ A python package to extract target points from a pointcloud for lidar metrology 
 
 ### Required packages
 
+Make a new virtual env and source it:
 ```
-pip install numpy
-pip install rosbags
-pip install pyvista
-pip install pyyaml
-pip install pyvistaqt
-pip install pyqt5
-pip install pandas
+$ python3 -m venv ./lidar_venv
+$ source lidar_venv/bin/activate
+```
+
+Install dependencies from `requirements.txt`:
+```
+$ pip install -r requirements.txt
 ```
 
 ## Usage

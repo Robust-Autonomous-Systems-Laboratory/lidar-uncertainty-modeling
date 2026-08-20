@@ -1,4 +1,4 @@
-from src.pointcloud_target_processing.rosbag_loader import ROSPointCloudLoader
+from src.rosbag_loader import ROSPointCloudLoader
 import pyvista as pv
 
 def get_target_in_bounds(bag_path: str, topic_name: str, target_box_bounds: list):

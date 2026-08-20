@@ -1,7 +1,7 @@
 from .target_processing import get_target_in_bounds
 from .rosbag_loader import ROSPointCloudLoader
 from .export_results import save_data
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 from pyvistaqt import QtInteractor
 from pathlib import Path
 import pyvista as pv
@@ -15,6 +15,7 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.experiment_file = ''
         self.bag_file = ''
         self.topic_name = ''
+        self.interactive_box = None
         
         self.setWindowTitle("Lidar Uncertainty Experiment Processor")
         self.resize(1000, 700)
@@ -60,31 +61,34 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.btn_next_target = QtWidgets.QPushButton("Next Target")
         self.btn_next_target.clicked.connect(self.next_target)
         control_layout.addWidget(self.btn_next_target)
+
+        # Dimension Controller
+        self.setup_dimension_controls(control_layout)
         
         # Spacer to push buttons to the top
         control_layout.addStretch()
-        
 
     def load_experiment_file(self):
         options = QtWidgets.QFileDialog.Options()
         options |= QtWidgets.QFileDialog.DontUseNativeDialog
-        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self,"QFileDialog.getOpenFileName()", "./cfg/","YAML Files (*.yaml);;All Files (*)", options=options)
+        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(
+            self, "QFileDialog.getOpenFileName()", "./cfg/", "YAML Files (*.yaml);;All Files (*)", options=options
+        )
         self.experiment_file = fileName
         if fileName:
             print(fileName)
-        
 
     def load_bag_file(self):
-            options = QtWidgets.QFileDialog.Options()
-            options |= QtWidgets.QFileDialog.DontUseNativeDialog
-            fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self,"QFileDialog.getOpenFileName()", "./","Bag Files (*.bag);;All Files (*)", options=options)
-            self.bag_file = fileName
-            if fileName:
-                print(fileName)
-            
+        options = QtWidgets.QFileDialog.Options()
+        options |= QtWidgets.QFileDialog.DontUseNativeDialog
+        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(
+            self, "QFileDialog.getOpenFileName()", "./", "Bag Files (*.bag);;All Files (*)", options=options
+        )
+        self.bag_file = fileName
+        if fileName:
+            print(fileName)
 
     def select_topic(self):
-        # select topic from list of PC2 messages in selected bag
         pc_loader = ROSPointCloudLoader(self.bag_file)
         pc2_topics = pc_loader.get_pc2_topics()
 
@@ -95,45 +99,86 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             print(f"User selected: {item}")
         self.topic_name = str(item)
 
+    def setup_dimension_controls(self, control_layout):
+        """Creates SpinBox and Slider controls for X, Y, Z box extents."""
+        self.dim_controls = {}
+        
+        dim_group = QtWidgets.QGroupBox("Box Extents (m)")
+        grid = QtWidgets.QGridLayout(dim_group)
+        
+        axes = ['X', 'Y', 'Z']
+        for idx, axis in enumerate(axes):
+            lbl = QtWidgets.QLabel(f"{axis}:")
+            
+            spin = QtWidgets.QDoubleSpinBox()
+            spin.setRange(0.1, 100.0)
+            spin.setSingleStep(0.1)
+            spin.setDecimals(2)
+            
+            slider = QtWidgets.QSlider(QtCore.Qt.Horizontal)
+            slider.setRange(1, 1000)
+            
+            spin.valueChanged.connect(lambda val, s=slider: s.setValue(int(val * 10)))
+            slider.valueChanged.connect(lambda val, sp=spin: sp.setValue(val / 10.0))
+            spin.valueChanged.connect(self.on_gui_bounds_changed)
+            
+            grid.addWidget(lbl, idx, 0)
+            grid.addWidget(spin, idx, 1)
+            grid.addWidget(slider, idx, 2)
+            
+            self.dim_controls[axis.lower()] = {'spin': spin, 'slider': slider}
+            
+        control_layout.addWidget(dim_group)
+
     def box_cb(self, box):
-        # box is a pyvista.PolyData representing the current state of the widget
+        """Callback triggered when moving/scaling the 3D box widget in the viewport."""
         self.current_bounds = box.bounds  # (x_min, x_max, y_min, y_max, z_min, z_max)
-        self.current_dims = (self.current_bounds[1] - self.current_bounds[0], self.current_bounds[3] - self.current_bounds[2], self.current_bounds[5] - self.current_bounds[4]) # (X,Y,Z) dimensions
-        # print(f'New Bounds: {bounds}')
-        # print(f'Dimensions (X, Y, Z): {dims}')
+        
+        dx = self.current_bounds[1] - self.current_bounds[0]
+        dy = self.current_bounds[3] - self.current_bounds[2]
+        dz = self.current_bounds[5] - self.current_bounds[4]
 
-    def next_target(self):
-        self.current_target_index += 1
-        self.plotter.clear()
+        # Block signals briefly to prevent recursive callback loops
+        for key, val in zip(['x', 'y', 'z'], [dx, dy, dz]):
+            if key in self.dim_controls:
+                spin = self.dim_controls[key]['spin']
+                spin.blockSignals(True)
+                spin.setValue(val)
+                self.dim_controls[key]['slider'].setValue(int(val * 10))
+                spin.blockSignals(False)
 
-        # Get extracted points
-        control_vol_bbox = self.current_bounds
-        control_vol_points = self.target_subset.clip_box(control_vol_bbox, invert=False)
+    def on_gui_bounds_changed(self):
+        """Callback triggered when numeric UI controls are changed by the user."""
+        if not hasattr(self, 'interactive_box') or self.interactive_box is None:
+            return
+            
+        if not hasattr(self, 'current_bounds'):
+            return
 
-        # Tell Pylance this is guaranteed to be a DataSet
-        assert isinstance(control_vol_points, pv.DataSet)
+        # Calculate current center
+        cx = (self.current_bounds[0] + self.current_bounds[1]) / 2.0
+        cy = (self.current_bounds[2] + self.current_bounds[3]) / 2.0
+        cz = (self.current_bounds[4] + self.current_bounds[5]) / 2.0
 
-        # Clean strings to prevent path root issues
-        exp_stem = Path(self.experiment_file).stem
-        topic = str(self.topic_name).strip("/\\")
-        target = str(self.target).strip("/\\")
+        # Read dimensions from UI
+        dx = self.dim_controls['x']['spin'].value()
+        dy = self.dim_controls['y']['spin'].value()
+        dz = self.dim_controls['z']['spin'].value()
 
-        # Define destination directory
-        target_dir = Path.cwd() / "results" / exp_stem / topic / target
+        new_bounds = [
+            cx - dx / 2.0, cx + dx / 2.0,
+            cy - dy / 2.0, cy + dy / 2.0,
+            cz - dz / 2.0, cz + dz / 2.0
+        ]
+        
+        self.current_bounds = new_bounds
 
-        # Delegate saving logic
-        save_data(
-            pointcloud=control_vol_points,
-            output_dir=target_dir,
-            name="control_volume_points"
-        )
-
-        # onto the next target!
-        self.plot_current_target()
+        # Place the widget directly on the vtkBoxWidget object
+        self.interactive_box.PlaceWidget(new_bounds)
+        self.plotter.render()
 
     def process_targets(self):
-        # get test yaml locations and extract and plot only points near target
-        with open(self.experiment_file,'r') as yaml_file:
+        with open(self.experiment_file, 'r') as yaml_file:
             yaml_data = yaml.safe_load(yaml_file)
             self.key_name, self.targets = next(iter(yaml_data.items()))
             self.num_targets = len(self.targets)
@@ -141,19 +186,36 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.current_target_index = 0
         self.plot_current_target()
 
+    def next_target(self):
+        self.current_target_index += 1
+        self.plotter.clear()
+
+        control_vol_bbox = self.current_bounds
+        control_vol_points = self.target_subset.clip_box(control_vol_bbox, invert=False)
+
+        assert isinstance(control_vol_points, pv.DataSet)
+
+        exp_stem = Path(self.experiment_file).stem
+        topic = str(self.topic_name).strip("/\\")
+        target = str(self.target).strip("/\\")
+
+        target_dir = Path.cwd() / "results" / exp_stem / topic / target
+
+        save_data(
+            pointcloud=control_vol_points,
+            output_dir=target_dir,
+            name="control_volume_points"
+        )
+
+        self.plot_current_target()
 
     def plot_current_target(self):
-        # check if all targets have been processed,
-        # plot and increment counter if not
-
         if not (self.current_target_index < self.num_targets):
-            # all targets processed
             print("All targets processed")
             self.plotter.clear()
             self.plotter.add_text("All targets processed!", position='lower_edge', font_size=12)
             return
 
-        # clear last mesh
         self.plotter.clear()
 
         self.target = list(self.targets)[self.current_target_index]
@@ -166,13 +228,13 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         y_extent = self.targets[self.target]["y_extent"]
         z_extent = self.targets[self.target]["z_extent"]
 
-        x_min, x_max = x - (x_extent/2), x + (x_extent/2)
-        y_min, y_max = y - (y_extent/2), y + (y_extent/2)
-        z_min, z_max = z - (z_extent/2), z + (z_extent/2)
+        x_min, x_max = x - (x_extent / 2), x + (x_extent / 2)
+        y_min, y_max = y - (y_extent / 2), y + (y_extent / 2)
+        z_min, z_max = z - (z_extent / 2), z + (z_extent / 2)
 
         self.target_subset = get_target_in_bounds(self.bag_file, self.topic_name, [x_min, x_max, y_min, y_max, z_min, z_max])
+        self.current_bounds = list(self.target_subset.bounds)
 
-        # Colorize by intensity if available, or fall back to Z-height
         color_scalar = 'intensity' if 'intensity' in self.target_subset.point_data else None
 
         self.plotter.add_mesh(
@@ -183,11 +245,19 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             render_points_as_spheres=True
         )
 
-        interactive_box = self.plotter.add_box_widget(
+        self.interactive_box = self.plotter.add_box_widget(
             callback=self.box_cb,
             bounds=self.target_subset.bounds,
             rotation_enabled=False
-        ) # pyright: ignore[reportCallIssue]
-        interactive_box.SetHandleSize(0.005)
-        interactive_box.GetHandleProperty().SetColor(1.0, 0.0, 0.0) # R,G,B [0,1]
-        
+        )
+        self.interactive_box.SetHandleSize(0.005)
+        self.interactive_box.GetHandleProperty().SetColor(1.0, 0.0, 0.0)
+
+        # Update initial spinbox values to match target dimensions
+        for key, val in zip(['x', 'y', 'z'], [x_extent, y_extent, z_extent]):
+            if key in self.dim_controls:
+                spin = self.dim_controls[key]['spin']
+                spin.blockSignals(True)
+                spin.setValue(val)
+                self.dim_controls[key]['slider'].setValue(int(val * 10))
+                spin.blockSignals(False)

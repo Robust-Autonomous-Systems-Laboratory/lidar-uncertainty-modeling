@@ -1,0 +1,7 @@
+numpy
+pandas
+rosbags
+pyvista
+pyyaml
+pyvistaqt
+pyqt5

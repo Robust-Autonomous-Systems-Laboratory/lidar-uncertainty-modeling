@@ -65,7 +65,7 @@ class ROSPointCloudLoader:
 
                 # Store remaining scalar fields (intensity, ring, rgb, etc.)
                 for name in names:
-                    if name not in ('x', 'y', 'z'):
+                    if name not in ('x', 'y', 'z','timestamp'):
                         scalars_dict[name].append(cloud_data[name][valid_mask])
 
                 # Record frame timestamp per point

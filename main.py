@@ -1,4 +1,4 @@
-from src.pointcloud_target_processing.gui import LidarUncertaintyGUI
+from src.gui import LidarUncertaintyGUI
 from PyQt5 import QtWidgets
 import sys
 
