@@ -24,7 +24,7 @@ $ pip install -r requirements.txt
 
 
 ## Related
-This processing pipeline supercedes an initial experiment processing architecture, located at https://github.com/Robust-Autonomous-Systems-Laboratory/open-lidar-evaluation
+This processing pipeline __supercedes__ an initial experiment processing architecture, located at https://github.com/Robust-Autonomous-Systems-Laboratory/open-lidar-evaluation
 
 ## Acknowledgement
 This work is supported by the United States National Institute of Standards and Technology (NIST) Grant 60NANB24D227.

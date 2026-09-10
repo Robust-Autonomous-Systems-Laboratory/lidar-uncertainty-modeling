@@ -68,6 +68,16 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         # Spacer to push buttons to the top
         control_layout.addStretch()
 
+    def closeEvent(self, event):
+        """Ensure PyVista/VTK interactor releases resources on app close."""
+        if hasattr(self, 'plotter') and self.plotter is not None:
+            # Clear widgets and renderer pipeline
+            self.plotter.clear()
+            # Explicitly terminate the QtInteractor instance
+            self.plotter.close()
+            
+        event.accept()
+
     def load_experiment_file(self):
         options = QtWidgets.QFileDialog.Options()
         options |= QtWidgets.QFileDialog.DontUseNativeDialog
@@ -115,7 +125,7 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             spin.setSingleStep(0.1)
             spin.setDecimals(2)
             
-            slider = QtWidgets.QSlider(QtCore.Qt.Horizontal)
+            slider = QtWidgets.QSlider(QtCore.Qt.Orientation.Horizontal)
             slider.setRange(1, 1000)
             
             spin.valueChanged.connect(lambda val, s=slider: s.setValue(int(val * 10)))
@@ -196,7 +206,7 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         assert isinstance(control_vol_points, pv.DataSet)
 
         exp_stem = Path(self.experiment_file).stem
-        topic = str(self.topic_name).strip("/\\")
+        topic = str(self.topic_name).strip("/\\").replace("/", "-")
         target = str(self.target).strip("/\\")
 
         target_dir = Path.cwd() / "results" / exp_stem / topic / target

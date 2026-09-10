@@ -12,7 +12,7 @@ def save_data(pointcloud: pv.DataSet, output_dir: Path | str, name: str = "contr
 
     # 2. Extract XYZ coordinates
     data = {
-        'range': ((pointcloud.points[:,0])**2 + (pointcloud.points[:, 1])**2 + (pointcloud.points[:, 2])**2)**0.5,
+        'calculated_range': ((pointcloud.points[:,0])**2 + (pointcloud.points[:, 1])**2 + (pointcloud.points[:, 2])**2)**0.5,
         'x': pointcloud.points[:, 0],
         'y': pointcloud.points[:, 1],
         'z': pointcloud.points[:, 2]
