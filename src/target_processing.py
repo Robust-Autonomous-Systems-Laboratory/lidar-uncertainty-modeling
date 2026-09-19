@@ -18,14 +18,18 @@ def fit_plane_irls(
     loss_function: str = "tukey",
     max_iters: int = 30,
     tol: float = 1e-6,
-    inlier_threshold: float = 0.02,
-    target_width: float = 0.4,
-    target_height: float = 0.4,
+    inlier_threshold: float = 0.02, # 0.02
+    target_width: float = 0.5,
+    target_height: float = 0.5,
 ):
     """Fits a plane using IRLS and crops points to a specified 2D lateral bounding box,
 
     removing vertical mounting posts below the target.
     """
+    # Adjust the inner area by cropping out the extents of the target
+    target_height = target_height - 0.1
+    target_width = target_width - 0.1
+
     pts = cloud.points.copy()
     n_points = pts.shape[0]
 

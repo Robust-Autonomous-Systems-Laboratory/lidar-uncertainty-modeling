@@ -7,7 +7,7 @@ june_26_2026_laser_rangefinder:
     # apprx. target center
     x_target: 25
     y_target: 0
-    z_target: 0
+    z_target: 1
     # target extraction volume (visualization only)
     x_extent: 5
     y_extent: 5

@@ -1,7 +1,7 @@
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, cast
-from rosbags.highlevel import AnyReader 
+from rosbags.highlevel import AnyReader
 import numpy as np
 import pyvista as pv
 
@@ -28,6 +28,7 @@ class ROSPointCloudLoader:
 
         points_list = []
         scalars_dict = defaultdict(list)
+        cloud_idx = 0  # Counter for valid point cloud frames
 
         with AnyReader([self.bag_path]) as reader:
             connections = [x for x in reader.connections if x.topic == topic_name]
@@ -47,7 +48,7 @@ class ROSPointCloudLoader:
                     'itemsize': msg.point_step
                 })
 
-                # process buffer to numpy format
+                # Process buffer to numpy format
                 cloud_data = np.frombuffer(msg.data, dtype=dtype)
 
                 # Extract XYZ spatial coordinates (using float32 for speed and reduced RAM usage)
@@ -60,12 +61,12 @@ class ROSPointCloudLoader:
                 if len(xyz_clean) == 0:
                     continue
 
-                # Store clean coordinate array
+                # Store clean coordinate array and record point count
                 points_list.append(xyz_clean)
 
                 # Store remaining scalar fields (intensity, ring, rgb, etc.)
                 for name in names:
-                    if name not in ('x', 'y', 'z','timestamp'):
+                    if name not in ('x', 'y', 'z', 'timestamp', 'cloud_index'):
                         scalars_dict[name].append(cloud_data[name][valid_mask])
 
                 # Record frame timestamp per point
@@ -73,17 +74,21 @@ class ROSPointCloudLoader:
                     time_sec = timestamp / 1e9
                     scalars_dict['timestamp'].append(np.full(len(xyz_clean), time_sec, dtype=np.float64))
 
+                # Record the origin point cloud ID for each point
+                scalars_dict['cloud_index'].append(np.full(len(xyz_clean), cloud_idx, dtype=np.int32))
+                cloud_idx += 1
+
         if not points_list:
             print(f"No valid point cloud data found on topic: '{topic_name}'")
             return pv.PolyData()
 
-        # concatenate 
+        # Concatenate spatial coordinates
         merged_xyz = np.vstack(points_list)
 
-        # make a single polydata object with the merged numpy representation
+        # Make a single polydata object with the merged numpy representation
         merged_cloud = pv.PolyData(merged_xyz)
 
-        # attach other data fields besides x,y,z
+        # Attach scalar data fields (including cloud_index and timestamp)
         for field_name, scalar_list in scalars_dict.items():
             merged_cloud.point_data[field_name] = np.concatenate(scalar_list)
 

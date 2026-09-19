@@ -5,3 +5,4 @@ pyvista
 pyyaml
 pyvistaqt
 pyqt5
+reportlab

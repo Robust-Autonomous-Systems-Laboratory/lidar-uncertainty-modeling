@@ -8,6 +8,7 @@ from pathlib import Path
 from .target_processing import get_target_in_bounds, fit_plane_irls
 from .rosbag_loader import ROSPointCloudLoader
 from .export_results import save_data
+from .repeatability_processor import LiDARRepeatabilityAnalyzer
 
 class LidarUncertaintyGUI(QtWidgets.QMainWindow):
     def __init__(self):
@@ -57,6 +58,11 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.btn_next_target = QtWidgets.QPushButton("Next Target")
         self.btn_next_target.clicked.connect(self.next_target)
         control_layout.addWidget(self.btn_next_target)
+
+        # Added Repeatability button
+        self.btn_process_repeatability = QtWidgets.QPushButton("Process Repeatability")
+        self.btn_process_repeatability.clicked.connect(self.process_repeatability)
+        control_layout.addWidget(self.btn_process_repeatability)
 
         control_layout.addStretch()
 
@@ -134,11 +140,33 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         save_data(
             pointcloud=self.processed_cloud,
             output_dir=target_dir,
-            name="processed_planar_target_points",
+            name="inner_planar_target_points",
         )
 
         self.current_target_index += 1
         self.plot_current_target()
+
+    def process_repeatability(self):
+        """Handler for processing LiDAR repeatability."""
+        if not self.experiment_file:
+            print("Please select an experiment YAML file first.")
+            return
+
+        exp_stem = Path(self.experiment_file).stem
+        target_dir = Path.cwd() / "results" / exp_stem 
+
+        print("Processing repeatability analysis...")
+        analyzer = LiDARRepeatabilityAnalyzer(self.experiment_file)
+
+        analyzer = LiDARRepeatabilityAnalyzer(root_dir=str(target_dir))
+
+        # Traverse results directory and compute stats
+        analyzer.scan_and_process()
+
+        # Export CSV and convert CSV to PDF (saves in experiment directory)
+        csv_path = analyzer.export_summary_csv(str(target_dir) + "lidar_repeatability_summary.csv")
+        pdf_path = analyzer.export_pdf_report(csv_path)
+        print(f"Repeatability report saved at: {pdf_path}")
 
     def plot_current_target(self):
         if not (self.current_target_index < self.num_targets):
@@ -152,6 +180,7 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.plotter.clear()
 
         self.target = list(self.targets)[self.current_target_index]
+        [target_w, target_h] = self.targets[self.target]["size"]
         print(
             f"Processing target [{self.current_target_index + 1} / {self.num_targets}]"
         )
@@ -179,12 +208,14 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             cloud=raw_target_subset,
             loss_function="tukey",
             inlier_threshold=0.02,
+            target_height=target_h,
+            target_width=target_w,
         )
 
         # 3. Render strictly the cleaned planar inliers with residual distance scalar visualization
         color_scalar = (
-            "residuals"
-            if "residuals" in self.processed_cloud.point_data
+            "intensity"
+            if "intensity" in self.processed_cloud.point_data
             else None
         )
 
