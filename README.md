@@ -4,7 +4,7 @@ A python package to extract planar target points from a pointcloud for automotiv
 
 ## Architecture
 
-Point cloud pre-processing and statistics calculation is controlled by `gui.py`, which starts a PyQt application with PyVista graphing embedded for point cloud visualization. The accompanying diagram was generated with [gitdiagram.com](gitdiagram.com)
+Point cloud pre-processing and statistics calculation is controlled by `gui.py`, which starts a PyQt application with PyVista graphing embedded for point cloud visualization. The accompanying diagram was generated with [https://gitdiagram.com](https://gitdiagram.com/)
 
 ![Project architecture diagram](./artifacts/architecture_diagram.jpg)
 
