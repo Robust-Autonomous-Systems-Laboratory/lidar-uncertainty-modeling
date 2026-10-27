@@ -1,8 +1,12 @@
 # main links
 main:
-  - title: "Home"
-    url: /
+  - title: "ToF Lidar Operation"
+    url: /tof-lidar/
   - title: "Uncertainty Components"
     url: /uncertainty-components/
-  - title: "Experiment Configuration"
+  - title: "Experiment"
     url: /experiment/
+  - title: "Processing"
+    url: /experiment/
+  - title: "Data + Results"
+    url: /data/
