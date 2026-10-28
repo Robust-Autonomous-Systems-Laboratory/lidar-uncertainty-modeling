@@ -19,6 +19,10 @@ author_profile: false
 
 <!-- {% include gallery %} -->
 
+
+Intro text blurb before other sections! 
+
+
 ## Lidar Range Equation
 
 $$
