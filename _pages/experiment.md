@@ -1,6 +1,7 @@
 ---
 layout: single
 classes: wide
+mathjax: true
 title: "Experiment Configuration"
 permalink: /experiment/
 author_profile: false

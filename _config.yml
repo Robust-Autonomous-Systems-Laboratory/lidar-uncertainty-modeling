@@ -26,7 +26,7 @@ url                      : "https://robust-autonomous-systems-laboratory.github.
 baseurl                  : "/lidar-uncertainty-modeling"
 repository               : "Robust-Autonomous-Systems-Laboratory/lidar-uncertainty-modeling"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/asssets/media/RASL_FLAME.png"
+logo                     : # "/asssets/media/RASL_FLAME.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200

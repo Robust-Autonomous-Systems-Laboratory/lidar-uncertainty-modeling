@@ -1,6 +1,7 @@
 ---
 layout: single
 classes: wide
+mathjax: true
 title: "Data Processing"
 permalink: /processing/
 author_profile: false

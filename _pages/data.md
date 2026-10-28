@@ -1,6 +1,7 @@
 ---
 layout: single
 classes: wide
+mathjax: true
 title: "Data + Results"
 permalink: /data/
 author_profile: false

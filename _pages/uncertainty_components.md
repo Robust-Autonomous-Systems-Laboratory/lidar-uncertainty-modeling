@@ -1,6 +1,7 @@
 ---
 layout: single
 classes: wide
+mathjax: true
 title: "Uncertainty Components of Automotive Lidar"
 permalink: /uncertainty-components/
 author_profile: false

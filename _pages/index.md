@@ -24,7 +24,7 @@ Automotive time-of-flight (ToF) lidar sensors are critical for autonomous vehicl
 
 [How do ToF lidars work?]({{ '/tof-lidar/' | relative_url }}){: .btn .btn--primary}
 [Sources of lidar range uncertainty]({{ '/uncertainty-components/' | relative_url }}){: .btn .btn--info}
----
+
 
 ## Lidar Range Experiment
 
