@@ -7,6 +7,6 @@ main:
   - title: "Experiment"
     url: /experiment/
   - title: "Processing"
-    url: /experiment/
+    url: /processing/
   - title: "Data + Results"
     url: /data/
