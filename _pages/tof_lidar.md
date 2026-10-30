@@ -8,8 +8,14 @@ author_profile: false
 
 ---
 
+ <!-- ADD INTRO SECTION HERE -->
+
+
+
+## Architecture
+
  
 
+## Detector Circuit
 
-
-## Signal Processing
+ 

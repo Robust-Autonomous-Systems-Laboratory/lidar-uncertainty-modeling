@@ -11,7 +11,7 @@ toc_icon: "list"
 toc_sticky: true
 ---
 
-Intro paragraph here ...
+<!-- ADD INTRO SECTION HERE -->
 
 * TOC
 {:toc}
@@ -26,7 +26,7 @@ To provide a baseline level of performance, we leverage multiple Lambertian targ
 
 Specifically, we use twelve [Labsphere Permaflect® Targets](https://www.labsphere.com/product/permaflect-targets-rigid-lidar-commercial-and-custom/) at 10% and 80% reflectivities. Ten targets are 0.5 m x 0.5 m in size and two are 1 m x 1 m in size, used for farther distances. Half of the targets of all sizes are 10% reflective, and other half are 80% reflective so we can evaluate range uncertainty at two representative reflectivities.
 
-{% include figure image_path="/assets/media/1m_targets.jpg" alt="Two lidar targets are positioned in an empty parking lot" caption="Figure 1: Two, 1m Labsphere targets at 10% and 80% spectral reflectance" %}
+{% include figure image_path="/assets/media/1m_targets.jpg" alt="Two lidar targets are positioned in an empty parking lot" caption="Figure 1: Two, 1m Labsphere targets at 10% and 80% spectral reflectance" class="align-center half" %}
 
 The Labsphere Permaflect® targets used in our experiment are calibrated at a single point on the target at wavelengths from 350 to 2400 nm at 10 nm increments, with a reported spectral reflectance of $\pm 2$ % the advertised reflectance at 905 nm, a common wavelength used by automotive lidar sensors. 
 
@@ -80,7 +80,7 @@ Custom built target stands were designed to mount each lidar target, and remain 
 
 ## Lidar Under Test
 
-{% include figure image_path="/assets/media/lidars_under_test.png" alt="Four automotive lidar sensors used in this test are placed next to each other" caption="Figure 2: Primary lidars evaluated in this experiment, from left to right: Velodyne VLP-32C, Ouster OS-1, Robosense Ruby, and the Luminar Iris" %}
+{% include figure image_path="/assets/media/lidars_under_test.png" alt="Four automotive lidar sensors used in this test are placed next to each other" caption="Figure 2: Primary lidars evaluated in this experiment, from left to right: Velodyne VLP-32C, Ouster OS-1, Robosense Ruby, and the Luminar Iris" class="align-center half" %}
 
 
 ## Computer Setup
