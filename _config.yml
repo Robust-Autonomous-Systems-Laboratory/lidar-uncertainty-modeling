@@ -168,7 +168,7 @@ footer:
 # If left blank, Jekyll will look for these files in the root directory.
 # Since you placed them in assets/images/, define the paths explicitly:
 
-site_favicon: "/assets/media/rasl_flame_favicon/favicon.ico"
+site_favicon: "/assets/media/favicon.ico"
 
 
 # Reading Files

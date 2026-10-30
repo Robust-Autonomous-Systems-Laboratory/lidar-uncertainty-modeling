@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 classes: wide
 mathjax: true
 title: "Uncertainty Components of Automotive Lidar"
