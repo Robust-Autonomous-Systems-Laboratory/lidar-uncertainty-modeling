@@ -129,7 +129,7 @@ To avoid this issue, we placed the tape measure on the test site ground and alig
 We evaluate four primary automotive lidars in our experiment, representing varying lidar wavelengths and design parameters. The experiment includes the Velodyne VLP-32C, Ouster OS-1, Robosense Ruby, and Luminar Iris, with the following advertised specifications:
 
 
-<div align="center">
+
 
 | Lidar | Wavelength | Max Range | Precision | Accuracy | Channels |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -138,7 +138,7 @@ We evaluate four primary automotive lidars in our experiment, representing varyi
 | Robosense Ruby | 905 nm | 200 m | - | $\pm$ 5 cm | 128 |
 | Luminar Iris | 1550 nm | > 275 m | - | $\pm$ 2 cm | - |
 
-</div>
+
 
 
 
