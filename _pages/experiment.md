@@ -137,6 +137,7 @@ We evaluate four primary automotive lidars in our experiment, representing varyi
 | Ouster OS-1 | 865 nm | 200 m | 2 cm | $\pm$ 3 cm | 64 |
 | Robosense Ruby | 905 nm | 200 m | - | $\pm$ 5 cm | 128 |
 | Luminar Iris | 1550 nm | > 275 m | - | $\pm$ 2 cm | - |
+{: style="margin-left: auto; margin-right: auto; display: table;"}
 
 
 
