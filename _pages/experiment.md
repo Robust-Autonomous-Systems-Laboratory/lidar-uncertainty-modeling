@@ -26,7 +26,9 @@ To establish a baseline performance level, we use multiple Lambertian targets pl
 
 Specifically, we use twelve [Labsphere Permaflect® Targets](https://www.labsphere.com/product/permaflect-targets-rigid-lidar-commercial-and-custom/) at 10% and 80% reflectivities. Ten targets are 0.5 m x 0.5 m, and two are 1 m x 1 m for longer distances. Half of the targets of each size are 10% reflective, and the other half are 80% reflective, allowing us to evaluate range uncertainty at two representative reflectivities.
 
+<div style="max-width: 60%; margin: 0 auto;">
 {% include figure image_path="/assets/media/1m_targets.jpg" alt=" Two lidar targets are positioned in an empty parking lot" caption=" Figure 1: Two 1m Labsphere targets at 10% and 80% spectral reflectance" class="align-center" %}
+</div>
 
 The Labsphere Permaflect® targets used in our experiment are calibrated at a single point on the target at wavelengths from 350 to 2400 nm in 10 nm increments, with a reported spectral reflectance of $\pm 2$ % of the advertised reflectance at 905 nm, a common wavelength used by automotive lidar sensors. 
 
@@ -49,7 +51,9 @@ Custom-built target stands were designed to mount each lidar target and remain e
 
 Because our lidar targets do not include mounting hardware, we designed 3D-printed brackets that attach to each stand's signpost to hold the targets without requiring any modifications to the target. The .stl files for each printed bracket are also provided at the links below.
 
+<div style="max-width: 100%; margin: 0 auto;">
 {% include figure image_path="/assets/media/fully_assembled_0.5m_target.png" alt="A lidar target mounted to a signpost, and held upright by a wooden base" caption="Figure 2: Fully assembled rendering of the 0.5 m lidar target, featuring a 3 ft X-shaped base and a single, 6 ft tall signpost" %}
+</div>
 
 
 <!-- Target Stand Instructions -->
@@ -81,7 +85,9 @@ Therefore, the experiment requires a flat or near-flat area approximately 100 me
 
 A permanent test site installation, where target stands are placed in the ground, may be more suitable depending on the climate and testing goals. We opt against this option due to very limited space on our University's campus that we were permitted to use as a permanent, year-round installation and the lack of access in winter (i.e., not snowplowed). We find that our portable target experiment is more suitable for practical deployments of this experiment, as it can be set up and taken down in a simple parking lot.
 
-{% include figure image_path="/assets/media/experiment_with_fall_colors.jpg" alt="A view down-range of the experiment test site, with all 12 lidar targets in frame" caption="Figure 3: A view of the experiment site in Lot 24, with 12 targets placed at discrete ranges from the lidar under test." class="align-center" %}
+<div style="max-width: 100%; margin: 0 auto;">
+{% include figure image_path="/assets/media/experiment_with_fall_colors_cropped.jpg" alt="A view down-range of the experiment test site, with all 12 lidar targets in frame" caption="Figure 3: A view of the experiment site in Lot 24, with 12 targets placed at discrete ranges from the lidar under test." class="align-center" %}
+</div>
 
 ## Target Arrangement
 
@@ -89,8 +95,9 @@ We arrange the twelve targets in an "inverted-V" shape, with two lines of target
 
 This arrangement provides a clear line of sight between the lidar and each target. Targets are gently turned to face the lidar so that the center of each target is at the specified range increment.
 
-
+<div style="max-width: 100%; margin: 0 auto;">
 {% include figure image_path="/assets/media/target_layout_plot.png" alt="A top-down plotted figure that illustrates the inverted-V shape of the targets placed in the test range" caption="Figure 4: Target placement in the 12-target lidar range experiment. 0.5 m targets are placed at 15, 30, 45, 60, and 75 m increments, and 1 m targets are placed at 100 m. Targets alternate reflectivity on the left and right-hand sides. The lidar under test is identified in red on the opening of the V-shape." class="align-center" %}
+</div>
 
 
 ## Target Placement
@@ -121,14 +128,19 @@ To avoid this issue, we placed the tape measure on the test site ground and alig
 
 We evaluate four primary automotive lidars in our experiment, representing varying lidar wavelengths and design parameters. The experiment includes the Velodyne VLP-32C, Ouster OS-1, Robosense Ruby, and Luminar Iris, with the following advertised specifications:
 
+<div style="max-width: 100%; margin: 0 auto;">
 | Lidar | Wavelength | Max Range | Precision | Accuracy | Channels |
 | ----- | ---------- | --------- | --------- | -------- | -------- |
 | Velodyne VLP-32C | 905 nm | 200 m | - | $\pm$ 3 cm | 32 |
 | Ouster OS-1 | 865 nm | 200 m | 2 cm | $\pm$ 3 cm | 64 |
 | Robosense Ruby | 905 nm | 200 m | - | $\pm$ 5 cm | 128 |
 | Luminar Iris | 1550 nm | > 275 m | - | $\pm$ 2 cm | - |
+</div>
 
+
+<div style="max-width: 70%; margin: 0 auto;">
 {% include figure image_path="/assets/media/lidars_under_test.png" alt="Four automotive lidar sensors used in this test are placed next to each other" caption="Figure 5: Primary lidars evaluated in this experiment, from left to right: Velodyne VLP-32C, Ouster OS-1, Robosense Ruby, and the Luminar Iris" class="align-center" %}
+</div>
 
 Data was recorded for each lidar using the following modes:
 
