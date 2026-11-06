@@ -10,6 +10,7 @@ toc_label: "Experiment Components"
 toc_icon: "list"
 toc_sticky: true
 ---
+<br>
 
 <!-- INTRO SECTION HERE -->
 Our lidar range experiment uses a lot of custom-designed, low-cost equipment. Here, we describe each component of the experiment, including assembly and setup instructions for practitioners to conduct their own experiments to benchmark lidar systems. We also describe our test field layout, ground-truth measurement systems and their respective uncertainties, and the lidars under test.
@@ -25,7 +26,7 @@ To establish a baseline performance level, we use multiple Lambertian targets pl
 
 Specifically, we use twelve [Labsphere Permaflect® Targets](https://www.labsphere.com/product/permaflect-targets-rigid-lidar-commercial-and-custom/) at 10% and 80% reflectivities. Ten targets are 0.5 m x 0.5 m, and two are 1 m x 1 m for longer distances. Half of the targets of each size are 10% reflective, and the other half are 80% reflective, allowing us to evaluate range uncertainty at two representative reflectivities.
 
-{% include figure image_path="/assets/media/1m_targets.jpg" alt=" Two lidar targets are positioned in an empty parking lot" caption=" Figure 1: Two 1m Labsphere targets at 10% and 80% spectral reflectance" class="align-center half" %}
+{% include figure image_path="/assets/media/1m_targets.jpg" alt=" Two lidar targets are positioned in an empty parking lot" caption=" Figure 1: Two 1m Labsphere targets at 10% and 80% spectral reflectance" class="align-center" %}
 
 The Labsphere Permaflect® targets used in our experiment are calibrated at a single point on the target at wavelengths from 350 to 2400 nm in 10 nm increments, with a reported spectral reflectance of $\pm 2$ % of the advertised reflectance at 905 nm, a common wavelength used by automotive lidar sensors. 
 
@@ -80,7 +81,7 @@ Therefore, the experiment requires a flat or near-flat area approximately 100 me
 
 A permanent test site installation, where target stands are placed in the ground, may be more suitable depending on the climate and testing goals. We opt against this option due to very limited space on our University's campus that we were permitted to use as a permanent, year-round installation and the lack of access in winter (i.e., not snowplowed). We find that our portable target experiment is more suitable for practical deployments of this experiment, as it can be set up and taken down in a simple parking lot.
 
-{% include figure image_path="/assets/media/experiment_with_fall_colors.jpg" alt="A view down-range of the experiment test site, with all 12 lidar targets in frame" caption="Figure 3: A view of the experiment site in Lot 24, with 12 targets placed at discrete ranges from the lidar under test." class="align-center half" %}
+{% include figure image_path="/assets/media/experiment_with_fall_colors.jpg" alt="A view down-range of the experiment test site, with all 12 lidar targets in frame" caption="Figure 3: A view of the experiment site in Lot 24, with 12 targets placed at discrete ranges from the lidar under test." class="align-center" %}
 
 ## Target Arrangement
 
@@ -89,7 +90,7 @@ We arrange the twelve targets in an "inverted-V" shape, with two lines of target
 This arrangement provides a clear line of sight between the lidar and each target. Targets are gently turned to face the lidar so that the center of each target is at the specified range increment.
 
 
-{% include figure image_path="/assets/media/target_layout_plot.png" alt="A top-down plotted figure that illustrates the inverted-V shape of the targets placed in the test range" caption="Figure 4: Target placement in the 12-target lidar range experiment. 0.5 m targets are placed at 15, 30, 45, 60, and 75 m increments, and 1 m targets are placed at 100 m. Targets alternate reflectivity on the left and right-hand sides. The lidar under test is identified in red on the opening of the V-shape." class="align-center half" %}
+{% include figure image_path="/assets/media/target_layout_plot.png" alt="A top-down plotted figure that illustrates the inverted-V shape of the targets placed in the test range" caption="Figure 4: Target placement in the 12-target lidar range experiment. 0.5 m targets are placed at 15, 30, 45, 60, and 75 m increments, and 1 m targets are placed at 100 m. Targets alternate reflectivity on the left and right-hand sides. The lidar under test is identified in red on the opening of the V-shape." class="align-center" %}
 
 
 ## Target Placement
@@ -140,7 +141,9 @@ Data was recorded for each lidar using the following modes:
 
 A testing campaign of this nature requires a computer with sufficient storage and I/O connections to connect to and log all lidar data while remaining weather-resistant for winter testing. As part of our lab's [WADS dataset](https://digitalcommons.mtu.edu/wads/) collection, we've designed a custom Mini-ITX server with 6 2-TB SSDs configured in RAID and mounted it within a weatherproof Pelican case [5]. This server also serves as the primary data collection computer for our lidar target experiment, featuring 8 Ethernet ports for sensor connections and remaining weather-tight for adverse winter testing.
 
+<div style="max-width: 60%; margin: 0 auto;">
 {% include figure image_path="/assets/media/adr.jpg" alt="exploded view of a custom server within a weatherproof pelican case" caption="Figure 6: The Autonomy Data Recorder (ADR), a custom server with 12TB storage and ample ethernet I/O to connect and log all autonomy sensor data." %}
+</div>
 
 
 ## References
