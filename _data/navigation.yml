@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "ToF Lidar Operation"
+  - title: "ToF Lidar"
     url: /tof-lidar/
   - title: "Uncertainty Components"
     url: /uncertainty-components/

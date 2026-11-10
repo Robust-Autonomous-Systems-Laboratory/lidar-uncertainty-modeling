@@ -32,7 +32,7 @@ Specifically, we use twelve [Labsphere Permaflect® Targets](https://www.labsphe
 
 The Labsphere Permaflect® targets used in our experiment are calibrated at a single point on the target at wavelengths from 350 to 2400 nm in 10 nm increments, with a reported spectral reflectance of $\pm 2$ % of the advertised reflectance at 905 nm, a common wavelength used by automotive lidar sensors. 
 
-Our targets do not include mounting hardware; therefore, we designed a series of 3D-printed brackets to mount the targets to the post. For more information, please refer to the Target Stands section.
+Our targets do not include mounting hardware; therefore, we designed a series of 3D-printed brackets to mount the targets to the post. For more information, please refer to the [Target Stands](https://robust-autonomous-systems-laboratory.github.io/lidar-uncertainty-modeling/experiment/#target-stands) section.
 
 ### Low-Cost Painted Analogues
 
@@ -149,17 +149,17 @@ We evaluate four primary automotive lidars in our experiment, representing varyi
 
 Data was recorded for each lidar using the following modes:
 
-<u>Velodyne VLP-32C</u> - Strongest Return and Last Return
-<u>Ouster OS-1</u> - 1024x10, 1024x20, and 2048x10 resolutions
-<u>Robosense Ruby</u> - Strongest Return
+<u>Velodyne VLP-32C</u> - Strongest Return and Last Return <br>
+<u>Ouster OS-1</u> - 1024x10, 1024x20, and 2048x10 resolutions <br>
+<u>Robosense Ruby</u> - Strongest Return <br>
 <u>Luminar Iris</u> - Default FoV, no programmed foveation
 
 ## Computer Setup
 
-A testing campaign of this nature requires a computer with sufficient storage and I/O connections to connect to and log all lidar data while remaining weather-resistant for winter testing. As part of our lab's [WADS dataset](https://digitalcommons.mtu.edu/wads/) collection, we've designed a custom Mini-ITX server with 6 2-TB SSDs configured in RAID and mounted it within a weatherproof Pelican case [5]. This server also serves as the primary data collection computer for our lidar target experiment, featuring 8 Ethernet ports for sensor connections and remaining weather-tight for adverse winter testing.
+A testing campaign of this nature requires a computer with sufficient storage and I/O connections to connect to and log all lidar data while remaining weather-resistant for winter testing. As part of our lab's [Winter Adverse Driving dataSet (WADS)](https://digitalcommons.mtu.edu/wads/) collection, we've designed a custom Mini-ITX server with six 2TB SSDs configured in RAID and mounted it within a weatherproof Pelican case [5]. This server also serves as the primary data collection computer for our lidar target experiment, featuring 8 Ethernet ports for sensor connections and remaining weather-tight for adverse winter testing.
 
 <div style="max-width: 60%; margin: 0 auto;">
-{% include figure image_path="/assets/media/adr.jpg" alt="exploded view of a custom server within a weatherproof pelican case" caption="Figure 6: The Autonomy Data Recorder (ADR), a custom server with 12TB storage and ample ethernet I/O to connect and log all autonomy sensor data." %}
+{% include figure image_path="/assets/media/adr.jpg" alt="exploded view of a custom server within a weatherproof pelican case" caption="Figure 6: The Autonomy Data Recorder (ADR), a custom server with 12TB storage and ample ethernet I/O to connect and log all autonomy sensor data [5]." %}
 </div>
 
 
