@@ -7,6 +7,7 @@ permalink: /tof-lidar/
 author_profile: false
 
 ---
+<br>
 
 # How does time-of-flight lidar work?
 
@@ -22,7 +23,7 @@ In most automotive lidar, the transmit and receive chains are monostatically ali
 Consumer ToF lidar for automotive and robotics applications commonly feature either a mechanical spinning architecture with stacked layers of lasers, or a semi solid-state scanning architecture in a forward scanning direction.
 
 <div style="max-width: 60%; margin: 0 auto;">
-{% include figure image_path="/assets/media/lidar_architecture_diagram.png" alt="A high level diagram showing a spinning lidar and its laser channels, and a semi-solid state lidar with its scan pattern." caption="Figure 1: Typical automotive lidar architectures and their laser patterns. The left figure highlights a spinning lidar with laser layers to form a vertical FoV, representative of a Velodyne VLP-16. The right figure highlights a semi solid state lidar with a horizontal and vertical FoV, representative of a Cepton Vista P60 [2]." class="align-center" %}
+{% include figure image_path="/assets/media/lidar_architecture_graphic.png" alt="A high level diagram showing a spinning lidar and its laser channels, and a semi-solid state lidar with its scan pattern." caption="Figure 1: Typical automotive lidar architectures and their laser patterns. The left figure highlights a spinning lidar with laser layers to form a vertical FoV, representative of a Velodyne VLP-16. The right figure highlights a semi solid state lidar with a horizontal and vertical FoV, representative of a Cepton Vista P60 [2]." class="align-center" %}
 </div>
  
 ### Laser Source (Transmitter)
@@ -37,7 +38,7 @@ On the receiver side, automotive ToF lidar leverages avalance photodiodes (APDs)
 
 Many automotive lidars use silcon-based linear mode avalance photodiodes, or LMAPDs. Linear mode indicates that the current output of the device is proprotional to the intensity of the reflected optical signal. Geiger-mode avalanche photodiodes (GMAPDs), also known as single-photon avalanche diodes (SPADs), are also used in some lidar, such as Ouster lidars, and can detect single photons and output a trigger, indicating a return event.
 
-In Figure 2, a Velodyne VLP-16 was opened for careful inspection of the internal architecture. Note that one side of the optical aparatus contains 16 stacks of lasers, and the opposite side contains 16 stacks of linear mode avalanche photodiodes. Each individual circuit corresponds to one of the VLP-16's 16 laser channels, aligned to provide a vertical field of view of roughly equal spacing, covering $\pm 15 \degree$.
+In Figure 2, a Velodyne VLP-16 was opened for careful inspection of the internal architecture. Note that one side of the optical aparatus contains 16 stacks of lasers, and the opposite side contains 16 stacks of linear mode avalanche photodiodes. Each individual circuit corresponds to one of the VLP-16's 16 laser channels, aligned to provide a vertical field of view of roughly equal spacing, covering $\pm 15 ^\circ$.
 
 <div style="max-width: 60%; margin: 0 auto;">
 {% include figure image_path="/assets/media/vlp16_teardown_diagram.png" alt="The optoelectronics within a Velodyne VLP-16 lidar" caption="Figure 2: A disassembled view of the internal optoelectronics of the VLP-16, highlighting separate stacks of laser sources and receivers." class="align-center" %}
