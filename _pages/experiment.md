@@ -12,6 +12,8 @@ toc_sticky: true
 ---
 <br>
 
+# Lidar Range Uncertainty Experiment
+
 <!-- INTRO SECTION HERE -->
 Our lidar range experiment uses a lot of custom-designed, low-cost equipment. Here, we describe each component of the experiment, including assembly and setup instructions for practitioners to conduct their own experiments to benchmark lidar systems. We also describe our test field layout, ground-truth measurement systems and their respective uncertainties, and the lidars under test.
 
