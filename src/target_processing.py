@@ -13,6 +13,28 @@ def get_target_in_bounds(bag_path: str, topic_name: str, target_box_bounds: list
 
     return target_subset
 
+def beam_range_residuals(pts: np.ndarray, centroid: np.ndarray, normal: np.ndarray,
+                         min_cos_incidence: float = 1e-3) -> np.ndarray:
+    """Signed range offset of each point from the plane, measured along its own beam.
+
+    Assumes the sensor is at the cloud origin, so each point's beam runs from the origin
+    through the point. For range r along unit direction d, the beam meets the plane at
+    r_plane = n.c / n.d, so the residual is r - r_plane = n.(p - c) / n.d. Positive means
+    the return is farther than the plane. Points at near-grazing incidence
+    (|n.d| < min_cos_incidence) get NaN.
+    """
+    pts = np.asarray(pts, dtype=float)
+    ranges = np.linalg.norm(pts, axis=1)
+    directions = pts / ranges[:, np.newaxis]
+    cos_incidence = directions @ normal
+    plane_dist = (pts - centroid) @ normal
+
+    residuals = np.full(len(pts), np.nan)
+    ok = np.abs(cos_incidence) >= min_cos_incidence
+    residuals[ok] = plane_dist[ok] / cos_incidence[ok]
+    return residuals
+
+
 def fit_plane_irls(
     cloud: pv.PolyData,
     loss_function: str = "tukey",
@@ -76,8 +98,13 @@ def fit_plane_irls(
             c = 2.385
             weights = 1.0 / (1.0 + (u_scale / c) ** 2)
 
+    # Signed orthogonal distance of each point to the fitted plane. This removes
+    # geometric range variation across the target face (e.g. a target that is not
+    # square-on to the lidar), leaving only measurement scatter about the plane.
+    signed_residuals = (pts - centroid) @ normal
+
     # Filter longitudinal (depth) inliers
-    final_residuals = np.abs((pts - centroid) @ normal)
+    final_residuals = np.abs(signed_residuals)
     planar_mask = final_residuals <= inlier_threshold
 
     # --- Step 2: Local 2D Basis Construction ---
@@ -122,6 +149,9 @@ def fit_plane_irls(
 
     output_cloud = cloud.copy()
     output_cloud.point_data["residuals"] = final_residuals
+    output_cloud.point_data["plane_distance"] = signed_residuals
+    # Same offset expressed in range units along each point's beam (used for s_r)
+    output_cloud.point_data["range_residual"] = beam_range_residuals(pts, centroid, normal)
 
     target_cloud = output_cloud.extract_points(
         inlier_indices, adjacent_cells=False

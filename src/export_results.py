@@ -3,20 +3,23 @@ from pathlib import Path
 import pandas as pd
 import pyvista as pv
 
-def save_data(pointcloud: pv.DataSet, output_dir: Path | str, name: str = "control_volume_points") -> None:
+def save_data(pointcloud: pv.DataSet, output_dir: Path | str, name: str = "control_volume_points",
+              trial_num: int | None = None) -> None:
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 1. Determine trial number based on existing files in output_dir
-    pattern = re.compile(rf"^{re.escape(name)}_(\d+)\.(csv|vtk)$")
-    trial_numbers = []
+    # 1. Use the given trial number (e.g. from the bag name); otherwise take the next
+    #    free number based on existing files in output_dir
+    if trial_num is None:
+        pattern = re.compile(rf"^{re.escape(name)}_(\d+)\.(csv|vtk)$")
+        trial_numbers = []
 
-    for file in output_dir.iterdir():
-        match = pattern.match(file.name)
-        if match:
-            trial_numbers.append(int(match.group(1)))
+        for file in output_dir.iterdir():
+            match = pattern.match(file.name)
+            if match:
+                trial_numbers.append(int(match.group(1)))
 
-    trial_num = max(trial_numbers, default=0) + 1
+        trial_num = max(trial_numbers, default=0) + 1
 
     # 2. Save as VTK file
     vtk_path = output_dir / f"{name}_{trial_num}.vtk"
