@@ -6,7 +6,7 @@ A python package to extract planar target points from a pointcloud for automotiv
 
 Point cloud pre-processing and statistics calculation is controlled by `gui.py`, which starts a PyQt application with PyVista graphing embedded for point cloud visualization. The accompanying diagram was generated with [https://gitdiagram.com](https://gitdiagram.com/)
 
-![Project architecture diagram](./artifacts/architecture_diagram.jpg)
+![Project architecture diagram](./artifacts/architecture.png)
 
 ## Installation
 
@@ -92,7 +92,7 @@ The report contains:
 - **Statistics by target**: one table per target, headed with its name, serial number, nominal range and reflectivity, with a row per lidar listing its number of trials, total points, mean range, pooled s<sub>r</sub> (degree-of-freedom weighted within-trial repeatability), trial-to-trial s (standard deviation of the trial mean ranges), and maximum U<sub>95</sub>. Every lidar is included, not only the charted ones. A target with no data says "No points or statistics for this target", and a note under each table names any lidars with no data for that target. These statistics are also saved as `lidar_repeatability_summary_per_target.csv`.
 - **Appendix**: the per-trial breakdown for every lidar, target, and trial.
 
-An example of this report is located here: [`/results/june_26_2026_laser_rangefinder/lidar_repeatability_summary.pdf`](./results/june_26_2026_laser_rangefinder/lidar_repeatability_summary.pdf)
+An example of this report is located here: [`/results/12_target_test/lidar_repeatability_summary.pdf`](./results/12_target_test/lidar_repeatability_summary.pdf)
 
 ## To Do
 Several functional updates are planned for the future of this processing application, including:

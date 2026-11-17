@@ -61,7 +61,7 @@ from src.target_processing import (
     target_range_residuals, plane_conditioning, channel_field, TargetFitError,
     FIT_METHOD_PLANE, FIT_METHOD_RING_LINE, FIT_METHOD_BEAM, FIT_METHOD_LABELS, PLANE_MIN_ASPECT,
     PLANE_MIN_POINTS, RING_MIN_POINTS, RING_MIN_AZIMUTHS, BEAM_MIN_POINTS, BEAM_MAX_AZIMUTH_SPAN,
-    CLUTTER_LINE_MIN_SIGMA,
+    CLUTTER_LINE_MIN_SIGMA, fmt_cm,
 )
 
 # sr_basis recorded per trial for each fit method (plane residuals refitted from saved points
@@ -379,7 +379,7 @@ class LiDARRepeatabilityAnalyzer:
         return selected, note
 
     def _per_target_charts(self, df: pd.DataFrame) -> tuple[list, str]:
-        """Render one chart per target: s_r (mm) for each trial, a series per charted lidar.
+        """Render one chart per target: s_r (cm) for each trial, a series per charted lidar.
 
         :return: ([(PNG buffer or None, height in inches, target), ...] in natural target
                   order, note about the lidar selection). A None buffer means none of the
@@ -401,8 +401,8 @@ class LiDARRepeatabilityAnalyzer:
         charts = []
         chart_df = df[df["lidar_id"].astype(str).isin(lidars)]
         # One s_r scale for every target chart so charts can be compared page to page
-        sr_max_mm = chart_df["repeatability_sr_m"].max() * 1000 if not chart_df.empty else 1.0
-        y_top = float(np.ceil(sr_max_mm * 1.08)) if np.isfinite(sr_max_mm) and sr_max_mm > 0 else 1.0
+        sr_max_cm = chart_df["repeatability_sr_m"].max() * 100 if not chart_df.empty else 0.1
+        y_top = float(sr_max_cm * 1.08) if np.isfinite(sr_max_cm) and sr_max_cm > 0 else 0.1
         for target in self.all_targets(df):
             tdf = chart_df[chart_df["test_id"].astype(str) == target].copy()
             tdf["trial_num"] = pd.to_numeric(tdf["trial_id"], errors="coerce")
@@ -416,42 +416,42 @@ class LiDARRepeatabilityAnalyzer:
             fig, ax = plt.subplots(figsize=(6.5, height_in), dpi=200)
             fig.patch.set_facecolor("white")
 
-            # x is the distance offset from the target's nominal range, in mm (same units as
+            # x is the distance offset from the target's nominal range, in cm (same units as
             # s_r); without a nominal range, offsets are taken from the mean of all trials.
             meta = self.target_metadata.get(target, {})
             if meta.get("nominal_range") is not None:
                 reference_m = float(meta["nominal_range"])
-                x_label = "Mean distance − nominal (mm)"
+                x_label = "Mean distance − nominal (cm)"
             else:
                 reference_m = float(tdf["mean_range_m"].mean())
-                x_label = "Mean distance − mean of all trials (mm)"
+                x_label = "Mean distance − mean of all trials (cm)"
 
             # Each trial is a small faint dot at (its mean-distance offset, its s_r). Each lidar
             # also gets one bold summary marker at (average offset, pooled s_r) with a
             # horizontal bar spanning ± pooled s_r; that marker carries the legend.
-            x_extent = 1.0
+            x_extent = 0.1
             any_ring_line = False
             for lidar in present:
                 ldf = tdf[tdf["lidar_id"].astype(str) == lidar].sort_values("trial_num")
                 st = styles[lidar]
-                offsets_mm = (ldf["mean_range_m"] - reference_m) * 1000
+                offsets_cm = (ldf["mean_range_m"] - reference_m) * 100
                 ring = (ldf["fit_method"].astype(str) != FIT_METHOD_PLANE).to_numpy()
                 # Plane-fit trials are faint filled dots; ring-line / fixed-beam fallback trials are hollow
-                ax.plot(offsets_mm[~ring], ldf["repeatability_sr_m"][~ring] * 1000, linestyle="none",
+                ax.plot(offsets_cm[~ring], ldf["repeatability_sr_m"][~ring] * 100, linestyle="none",
                         marker=st["marker"], markersize=3.5, color=st["color"], alpha=0.35,
                         markeredgewidth=0, zorder=2)
                 if ring.any():
                     any_ring_line = True
-                    ax.plot(offsets_mm[ring], ldf["repeatability_sr_m"][ring] * 1000, linestyle="none",
+                    ax.plot(offsets_cm[ring], ldf["repeatability_sr_m"][ring] * 100, linestyle="none",
                             marker=st["marker"], markersize=4.5, markerfacecolor="none",
                             markeredgecolor=st["color"], markeredgewidth=0.9, alpha=0.8, zorder=3)
 
                 dof = ldf["sample_count_N"] - 1
-                pooled_mm = (np.sqrt(np.sum(dof * ldf["repeatability_sr_m"] ** 2) / dof.sum()) * 1000
-                             if dof.sum() > 0 else float(ldf["repeatability_sr_m"].mean() * 1000))
-                centre_mm = float(offsets_mm.mean())
+                pooled_cm = (np.sqrt(np.sum(dof * ldf["repeatability_sr_m"] ** 2) / dof.sum()) * 100
+                             if dof.sum() > 0 else float(ldf["repeatability_sr_m"].mean() * 100))
+                centre_cm = float(offsets_cm.mean())
                 container = ax.errorbar(
-                    [centre_mm], [pooled_mm], xerr=[pooled_mm],
+                    [centre_cm], [pooled_cm], xerr=[pooled_cm],
                     fmt=st["marker"], color=st["color"], markersize=8.5,
                     markeredgecolor="white", markeredgewidth=1.2,
                     ecolor=st["color"], elinewidth=2.0, capsize=4, capthick=2.0,
@@ -459,7 +459,7 @@ class LiDARRepeatabilityAnalyzer:
                 )
                 for bar in container[2]:
                     bar.set_linestyle(st["linestyle"])
-                x_extent = max(x_extent, float(offsets_mm.abs().max()), abs(centre_mm) + pooled_mm)
+                x_extent = max(x_extent, float(offsets_cm.abs().max()), abs(centre_cm) + pooled_cm)
 
             # Symmetric x-axis keeps the nominal distance (0) in the centre of every chart
             x_lim = x_extent * 1.12
@@ -479,7 +479,7 @@ class LiDARRepeatabilityAnalyzer:
                         fontsize=7.5, color=INK_SECONDARY, va="bottom")
 
             ax.set_xlabel(x_label, fontsize=8, color=INK_SECONDARY)
-            ax.set_ylabel("Repeatability $s_r$ (mm)", fontsize=8, color=INK_SECONDARY)
+            ax.set_ylabel("Repeatability $s_r$ (cm)", fontsize=8, color=INK_SECONDARY)
             ax.xaxis.set_major_locator(plt.MaxNLocator(nbins=9, symmetric=True))
             ax.set_ylim(0, y_top)
             ax.tick_params(labelsize=7, colors=INK_SECONDARY, length=0)
@@ -557,8 +557,8 @@ class LiDARRepeatabilityAnalyzer:
                 "target_count": len(group),
                 "total_points": group["sample_count_N"].sum(),
                 "avg_range_m": group["mean_range_m"].mean(),
-                "pooled_s_r_mm": s_pooled * 1000,
-                "max_u95_mm": group["expanded_u95_m"].max() * 1000,
+                "pooled_s_r_m": s_pooled,
+                "max_u95_m": group["expanded_u95_m"].max(),
                 "fit_methods": fit_method_mix(group["fit_method"]),
             })
         pooled_df = pd.DataFrame(pooled_records)
@@ -607,43 +607,25 @@ class LiDARRepeatabilityAnalyzer:
             "by its own constant range, so s<sub>r</sub> is the scan-to-scan range scatter of each beam. "
             "A target is labelled Fixed beam only when no channel could be line-fitted. If a fit fails, "
             "scan lines whose own robust range spread is at least "
-            f"{CLUTTER_LINE_MIN_SIGMA * 1000:.0f} mm (vegetation or ground in the search volume) are "
+            f"{fmt_cm(CLUTTER_LINE_MIN_SIGMA)} cm (vegetation or ground in the search volume) are "
             "removed and the fit is retried once. Trials where no method fits are "
             "excluded from the statistics and listed under Fit Failures.", subtitle_style))
         story.append(Spacer(1, 6))
 
-        # 1. Per-target charts: s_r for every trial, one colour/marker per lidar
-        story.append(Paragraph("Repeatability by Target", section_style))
-        story.append(Paragraph(
-            "One chart per target. Faint dots are individual trials, plotted at the trial's mean distance "
-            "offset from the target's nominal range (mm) against its repeatability s<sub>r</sub>. The bold "
-            "marker for each lidar sits at its average offset and pooled s<sub>r</sub>, with a horizontal "
-            "bar spanning ± pooled s<sub>r</sub>; n is the number of trials. All charts share one "
-            "s<sub>r</sub> scale. Each lidar keeps the same colour and marker in every chart. Hollow "
-            "markers are trials fitted with the ring-line or fixed-beam fallback. " + chart_note, subtitle_style))
-        story.append(Spacer(1, 4))
         note_style = ParagraphStyle("Note", parent=subtitle_style, fontName="Helvetica-Oblique",
                                     textColor=colors.HexColor("#9A3412"))
-        for img_buffer, height_in, target in target_charts:
-            if img_buffer is None:
-                story.append(Paragraph(f"<b>{self.target_heading(target)}</b>", subtitle_style))
-                story.append(Paragraph("No points or statistics from the charted lidars for this target.", note_style))
-                story.append(Spacer(1, 8))
-                continue
-            story.append(KeepTogether([Image(img_buffer, width=6.5*inch, height=height_in*inch), Spacer(1, 6)]))
-        story.append(Spacer(1, 4))
 
-        # 2. Pooled Metrics Summary Table
+        # 1. Pooled Metrics Summary Table
         story.append(Paragraph("Pooled Sensor Summary", section_style))
         method_cell_style = ParagraphStyle("MethodCell", parent=styles["Normal"], fontName="Helvetica",
                                            fontSize=7.5, leading=9, alignment=1)
-        pooled_headers = ["Sensor ID", "Trials", "Total Points", "Avg Distance (m)", "Pooled s_r (mm)",
-                          "Max U_95 (mm)", "Fit Methods"]
+        pooled_headers = ["Sensor ID", "Trials", "Total Points", "Avg Distance (m)", "Pooled s_r (cm)",
+                          "Max U_95 (cm)", "Fit Methods"]
         pooled_rows = [pooled_headers]
         for _, r in pooled_df.iterrows():
             pooled_rows.append([
                 str(r["lidar_id"]), str(r["target_count"]), f"{int(r['total_points']):,}",
-                f"{r['avg_range_m']:.3f}", f"{r['pooled_s_r_mm']:.3f}", f"{r['max_u95_mm']:.3f}",
+                f"{r['avg_range_m']:.3f}", fmt_cm(r["pooled_s_r_m"]), fmt_cm(r["max_u95_m"]),
                 Paragraph(r["fit_methods"], method_cell_style),
             ])
 
@@ -663,7 +645,7 @@ class LiDARRepeatabilityAnalyzer:
         story.append(t_pooled)
         story.append(Spacer(1, 8))
 
-        # 3. Per-target statistics for each lidar, labelled with target name and serial number
+        # 2. Per-target statistics for each lidar, labelled with target name and serial number
         target_df = self.per_target_summary(df)
         target_csv_path = os.path.join(csv_dir, f"{os.path.splitext(os.path.basename(csv_path))[0]}_per_target.csv")
         target_df.to_csv(target_csv_path, index=False)
@@ -723,8 +705,8 @@ class LiDARRepeatabilityAnalyzer:
             "TargetHead", parent=styles["Normal"], fontName="Helvetica-Bold", fontSize=9.5,
             leading=12, textColor=colors.HexColor("#0F766E"), spaceBefore=10, spaceAfter=3)
         all_lidars = sorted(df["lidar_id"].astype(str).unique(), key=natural_key)
-        per_target_headers = ["LiDAR", "Trials", "Points", "Mean Range (m)", "Pooled s_r (mm)",
-                              "Trial-to-trial s (mm)", "Max U_95 (mm)", "Fit"]
+        per_target_headers = ["LiDAR", "Trials", "Points", "Mean Range (m)", "Pooled s_r (cm)",
+                              "Trial-to-trial s (cm)", "Max U_95 (cm)", "Fit"]
         for target in self.all_targets(df):
             group = target_df[target_df["target"].astype(str) == target]
             block = [Paragraph(self.target_heading(target), target_head_style)]
@@ -737,8 +719,8 @@ class LiDARRepeatabilityAnalyzer:
             for _, r in group.iterrows():
                 rows.append([
                     str(r["lidar_id"]), str(r["trials"]), f"{r['total_points']:,}",
-                    fmt(r["mean_range_m"], digits=4), fmt(r["pooled_s_r_m"], 1000),
-                    fmt(r["trial_to_trial_s_m"], 1000), fmt(r["max_u95_m"], 1000),
+                    fmt(r["mean_range_m"], digits=4), fmt_cm(r["pooled_s_r_m"]),
+                    fmt_cm(r["trial_to_trial_s_m"]), fmt_cm(r["max_u95_m"]),
                     Paragraph(r["fit_methods"], method_cell_style),
                 ])
             t_target = Table(rows, colWidths=[90, 36, 50, 62, 62, 66, 58, 80], repeatRows=1)
@@ -763,6 +745,25 @@ class LiDARRepeatabilityAnalyzer:
                     + (f", {n_fit_failed} because no plane, ring-line or fixed-beam fit was possible" if n_fit_failed else "")
                     + "; see Fit Failures.", note_style))
             story.append(KeepTogether(block))
+
+        # 3. Per-target charts: s_r for every trial, one colour/marker per lidar
+        story.append(Paragraph("Repeatability by Target", section_style))
+        story.append(Paragraph(
+            "One chart per target. Faint dots are individual trials, plotted at the trial's mean distance "
+            "offset from the target's nominal range (cm) against its repeatability s<sub>r</sub>. The bold "
+            "marker for each lidar sits at its average offset and pooled s<sub>r</sub>, with a horizontal "
+            "bar spanning ± pooled s<sub>r</sub>; n is the number of trials. All charts share one "
+            "s<sub>r</sub> scale. Each lidar keeps the same colour and marker in every chart. Hollow "
+            "markers are trials fitted with the ring-line or fixed-beam fallback. " + chart_note, subtitle_style))
+        story.append(Spacer(1, 4))
+        for img_buffer, height_in, target in target_charts:
+            if img_buffer is None:
+                story.append(Paragraph(f"<b>{self.target_heading(target)}</b>", subtitle_style))
+                story.append(Paragraph("No points or statistics from the charted lidars for this target.", note_style))
+                story.append(Spacer(1, 8))
+                continue
+            story.append(KeepTogether([Image(img_buffer, width=6.5*inch, height=height_in*inch), Spacer(1, 6)]))
+        story.append(Spacer(1, 4))
 
         # 4. Trials with no usable fit
         story.append(Paragraph("Fit Failures", section_style))
@@ -799,14 +800,14 @@ class LiDARRepeatabilityAnalyzer:
 
         # 5. Per-trial detail (appendix)
         story.append(Paragraph("Appendix: Per-Trial Uncertainty Breakdown", section_style))
-        detail_headers = ["Target", "LiDAR", "Trial", "N", "Mean Range (m)", "s_r (mm)", "u (mm)", "U_95 (mm)", "Fit"]
+        detail_headers = ["Target", "LiDAR", "Trial", "N", "Mean Range (m)", "s_r (cm)", "u (cm)", "U_95 (cm)", "Fit"]
         detail_rows = [detail_headers]
 
         for _, row in natural_sort(df, ["lidar_id", "test_id", "trial_id"]).iterrows():
             detail_rows.append([
                 str(row["test_id"]), str(row["lidar_id"]), str(row["trial_id"]), str(int(row["sample_count_N"])),
-                f"{row['mean_range_m']:.4f}", f"{row['repeatability_sr_m']*1000:.3f}",
-                f"{row['std_uncertainty_u_m']*1000:.3f}", f"{row['expanded_u95_m']*1000:.3f}",
+                f"{row['mean_range_m']:.4f}", fmt_cm(row["repeatability_sr_m"]),
+                fmt_cm(row["std_uncertainty_u_m"]), fmt_cm(row["expanded_u95_m"]),
                 fit_method_label(row["fit_method"]),
             ])
 

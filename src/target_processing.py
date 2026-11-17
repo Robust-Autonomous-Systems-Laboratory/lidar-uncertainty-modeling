@@ -2,6 +2,25 @@ from src.rosbag_loader import ROSPointCloudLoader
 import pyvista as pv
 import numpy as np
 
+
+def fmt_sig(value: float, sig: int = 4) -> str:
+    """Fixed-point text with `sig` significant digits (trailing zeros kept, no exponent)."""
+    if value is None or not np.isfinite(value):
+        return "—"
+    if value == 0:
+        return f"{0:.{sig - 1}f}"
+    decimals = max(0, sig - 1 - int(np.floor(np.log10(abs(value)))))
+    text = f"{value:.{decimals}f}"
+    # Rounding can carry into a new leading digit (9.9996 -> 10.000); drop the extra decimal
+    if decimals > 0 and len(text.lstrip("-").replace(".", "").lstrip("0")) > sig:
+        text = f"{value:.{decimals - 1}f}"
+    return text
+
+
+def fmt_cm(value_m: float) -> str:
+    """A length in metres as centimetres to 4 significant digits (project reporting convention)."""
+    return "—" if value_m is None or not np.isfinite(value_m) else fmt_sig(value_m * 100)
+
 def get_target_in_bounds(bag_path: str, topic_name: str, target_box_bounds: list):
 
     loader = ROSPointCloudLoader(bag_path)
@@ -734,8 +753,8 @@ def _fit_plane_irls_once(
     if seg_info["saturated"]:
         # Scatter as wide as the search band: no coherent surface (e.g. a few stray returns)
         raise TargetFitError(
-            f"no coherent target surface: depth scatter sigma {seg_info['sigma'] * 1000:.0f} mm "
-            f"fills the +/-{FACE_SEARCH_BAND * 1000:.0f} mm search band")
+            f"no coherent target surface: depth scatter sigma {fmt_cm(seg_info['sigma'])} cm "
+            f"fills the +/-{fmt_cm(FACE_SEARCH_BAND)} cm search band")
 
     channels = all_channels[inlier_indices] if field else None
     # plane=None: least-squares plane through exactly these points, matching the
@@ -745,7 +764,7 @@ def _fit_plane_irls_once(
     # Keep only points with a usable residual (drops channels the ring-line fit skipped)
     usable = ~np.isnan(range_residual)
     inlier_indices, range_residual = inlier_indices[usable], range_residual[usable]
-    detail += f"; {len(inlier_indices)} face pts, depth gate \u00b1{seg_info['gate'] * 1000:.0f} mm"
+    detail += f"; {len(inlier_indices)} face pts, depth gate \u00b1{fmt_cm(seg_info['gate'])} cm"
     if seg_info["dropped_lines"]:
         detail += f", dropped {seg_info['dropped_lines']} post/edge scan line(s)"
     final_residuals = np.abs(signed_residuals)
