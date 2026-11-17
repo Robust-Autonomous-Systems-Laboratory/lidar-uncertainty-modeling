@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target9",
+  "trial": 16,
+  "failure_kind": "fit_failed",
+  "reason": "no coherent target surface: depth scatter sigma 170 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: no coherent target surface: depth scatter sigma 358 mm fills the +/-250 mm search band",
+  "bag": "/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag",
+  "recorded": "2026-11-17T04:52:03"
+}

@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target9",
+  "trial": 2,
+  "failure_kind": "fit_failed",
+  "reason": "no coherent target surface: depth scatter sigma 130 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field)",
+  "bag": "/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag",
+  "recorded": "2026-11-17T03:56:44"
+}

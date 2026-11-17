@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target11",
+  "trial": 14,
+  "failure_kind": "fit_failed",
+  "reason": "no points left after plane fitting; reflectivity split from target12: kept 72/476 brightest pts by intensity",
+  "bag": "/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag",
+  "recorded": "2026-11-17T04:47:51"
+}

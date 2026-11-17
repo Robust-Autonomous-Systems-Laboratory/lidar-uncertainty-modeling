@@ -1,0 +1,9 @@
+{
+  "lidar_id": "vlp32_strongest",
+  "target": "target7",
+  "trial": 12,
+  "failure_kind": "no_target_points",
+  "reason": "only 0 points in the search box",
+  "bag": "/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag",
+  "recorded": "2026-11-17T05:45:20"
+}

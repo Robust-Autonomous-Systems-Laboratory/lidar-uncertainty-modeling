@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target12",
+  "trial": 14,
+  "failure_kind": "fit_failed",
+  "reason": "plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); reflectivity split from target11: kept 41/73 dimmest pts by intensity",
+  "bag": "/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag",
+  "recorded": "2026-11-17T04:48:15"
+}

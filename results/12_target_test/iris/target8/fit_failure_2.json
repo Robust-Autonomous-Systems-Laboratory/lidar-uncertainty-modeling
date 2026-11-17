@@ -1,0 +1,9 @@
+{
+  "lidar_id": "iris",
+  "target": "target8",
+  "trial": 2,
+  "failure_kind": "fit_failed",
+  "reason": "plane fit rejected: only 2 target points; ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",
+  "bag": "/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag",
+  "recorded": "2026-11-17T02:31:08"
+}

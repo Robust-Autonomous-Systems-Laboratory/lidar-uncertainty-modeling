@@ -1,0 +1,9 @@
+{
+  "lidar_id": "iris",
+  "target": "target5",
+  "trial": 25,
+  "failure_kind": "fit_failed",
+  "reason": "no points left after plane fitting",
+  "bag": "/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag",
+  "recorded": "2026-11-17T03:01:32"
+}

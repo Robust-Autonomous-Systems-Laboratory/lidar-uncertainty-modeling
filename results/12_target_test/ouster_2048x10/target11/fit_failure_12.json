@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ouster_2048x10",
+  "target": "target11",
+  "trial": 12,
+  "failure_kind": "no_target_points",
+  "reason": "only 4 points after the reflectivity split; reflectivity split from target12: kept 4/19 brightest pts by reflectivity",
+  "bag": "/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag",
+  "recorded": "2026-11-17T03:23:59"
+}

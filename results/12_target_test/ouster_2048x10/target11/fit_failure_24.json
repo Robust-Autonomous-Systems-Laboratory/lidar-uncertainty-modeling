@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ouster_2048x10",
+  "target": "target11",
+  "trial": 24,
+  "failure_kind": "no_target_points",
+  "reason": "only 8 points in the search box; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",
+  "bag": "/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag",
+  "recorded": "2026-11-17T03:45:34"
+}

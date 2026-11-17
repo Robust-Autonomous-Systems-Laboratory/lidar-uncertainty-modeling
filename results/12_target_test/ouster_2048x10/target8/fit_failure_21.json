@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ouster_2048x10",
+  "target": "target8",
+  "trial": 21,
+  "failure_kind": "fit_failed",
+  "reason": "no coherent target surface: depth scatter sigma 119 mm fills the +/-250 mm search band",
+  "bag": "/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag",
+  "recorded": "2026-11-17T03:38:41"
+}

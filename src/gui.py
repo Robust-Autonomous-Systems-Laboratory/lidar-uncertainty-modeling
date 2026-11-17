@@ -1,4 +1,5 @@
 import os
+import json
 import datetime
 import yaml
 import pandas as pd
@@ -7,7 +8,8 @@ from PyQt5 import QtWidgets, QtCore
 from pyvistaqt import QtInteractor
 from pathlib import Path
 
-from .target_processing import fit_plane_irls
+from .target_processing import (fit_plane_irls, TargetFitError, FIT_METHOD_LABELS,
+                                adjacent_target_reflectivities, separate_by_reflectivity)
 from .rosbag_loader import ROSPointCloudLoader
 from .export_results import save_data
 from .repeatability_processor import LiDARRepeatabilityAnalyzer
@@ -19,6 +21,16 @@ MIN_TARGET_POINTS = 10
 # Lidars plotted in the report's per-target charts (legend order). Tables always include
 # every lidar. Set to None to chart every lidar.
 REPORT_CHART_LIDARS = ["ouster_2048x10", "vlp32_strongest", "ruby", "iris"]
+
+# Folders the file dialogs open in. If a folder is missing, the dialog falls back to
+# the project directory.
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+EXPERIMENT_START_DIR = PROJECT_DIR / "cfg"
+BAG_START_DIR = Path.home() / "data" / "12_target_test"
+
+
+def _start_dir(preferred: Path) -> str:
+    return str(preferred if preferred.is_dir() else PROJECT_DIR)
 
 
 class LidarUncertaintyGUI(QtWidgets.QMainWindow):
@@ -34,6 +46,8 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.bag_index = 0
         self.current_target_index = 0
         self.processed_cloud = None
+        self.fit_method = self.fit_detail = ""                   # how the current target was fitted
+        self.extract_message = self.extract_failure_kind = ""    # why extraction failed, if it did
         self._cloud_cache = None  # (bag path, topic, merged cloud) for the current bag
 
         self.setWindowTitle("Lidar Uncertainty Experiment Processor")
@@ -83,6 +97,11 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.auto_running = False
         self.auto_stop_requested = False
 
+        # Live preview of each target while auto-processing (can be toggled mid-run)
+        self.chk_auto_preview = QtWidgets.QCheckBox("Show targets during auto-process")
+        self.chk_auto_preview.setChecked(True)
+        control_layout.addWidget(self.chk_auto_preview)
+
         # Added Repeatability button
         self.btn_process_repeatability = QtWidgets.QPushButton("Process Repeatability")
         self.btn_process_repeatability.clicked.connect(self.process_repeatability)
@@ -109,7 +128,7 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         fileName, _ = QtWidgets.QFileDialog.getOpenFileName(
             self,
             "Select Experiment YAML",
-            "./cfg/",
+            _start_dir(EXPERIMENT_START_DIR),
             "YAML Files (*.yaml);;All Files (*)",
             options=options,
         )
@@ -122,7 +141,7 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         options = QtWidgets.QFileDialog.Options()
         options |= QtWidgets.QFileDialog.DontUseNativeDialog
         directory = QtWidgets.QFileDialog.getExistingDirectory(
-            self, "Select Bag Directory", "./", options=options
+            self, "Select Bag Directory", _start_dir(BAG_START_DIR), options=options
         )
         if not directory:
             return
@@ -234,22 +253,40 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         self.plot_current_target()
 
     def _save_current_target(self) -> bool:
-        """Save the current target's extracted points; returns False if there were none."""
-        bag = self.bag_queue[self.bag_index]
-        if self.processed_cloud is None:
-            print(f"No points saved for {bag.lidar_name} trial {bag.trial} {self.target}")
-            return False
+        """Save the current target's extracted points; returns False if there were none.
 
+        When nothing was extracted, a fit_failure_<trial>.json record with the reason is
+        written instead so the repeatability report can list the failure.
+        """
+        bag = self.bag_queue[self.bag_index]
         exp_stem = Path(self.experiment_file).stem
         target = str(self.target).strip("/\\")
         target_dir = Path.cwd() / "results" / exp_stem / bag.lidar_name / target
 
-        # Save the filtered planar target inliers, numbered by the bag's trial number
+        if self.processed_cloud is None:
+            print(f"No points saved for {bag.lidar_name} trial {bag.trial} {self.target}")
+            target_dir.mkdir(parents=True, exist_ok=True)
+            record = {
+                "lidar_id": bag.lidar_name,
+                "target": target,
+                "trial": bag.trial,
+                "failure_kind": self.extract_failure_kind,
+                "reason": self.extract_message,
+                "bag": str(bag.path),
+                "recorded": datetime.datetime.now().isoformat(timespec="seconds"),
+            }
+            with open(target_dir / f"fit_failure_{bag.trial}.json", "w") as f:
+                json.dump(record, f, indent=2)
+            return False
+
+        # Save the filtered target inliers, numbered by the bag's trial number. The fit
+        # method used for the range residuals is stored on every row for the report.
         save_data(
             pointcloud=self.processed_cloud,
             output_dir=target_dir,
             name="inner_planar_target_points",
             trial_num=bag.trial,
+            extra_columns={"fit_method": self.fit_method},
         )
         return True
 
@@ -290,15 +327,19 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
                 bag = self.bag_queue[self.bag_index]
                 QtWidgets.QApplication.processEvents()  # keep the window responsive / see Stop
                 ok, message = self._extract_current_target()
+                if self.chk_auto_preview.isChecked():
+                    self._render_current_target(ok, message, spheres=False)
+                    self.plotter.render()
                 QtWidgets.QApplication.processEvents()
-                saved = ok and self._save_current_target()
+                saved = self._save_current_target()  # records the failure when not ok
                 log_rows.append({
                     "lidar_name": bag.lidar_name,
                     "trial": bag.trial,
                     "target": self.target,
                     "status": "saved" if saved else "skipped",
                     "points": self.processed_cloud.n_points if saved else 0,
-                    "detail": "" if saved else message,
+                    "fit_method": self.fit_method if saved else "",
+                    "detail": self.fit_detail if saved else message,
                     "bag": str(bag.path),
                 })
                 self._advance()
@@ -370,6 +411,14 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             return
 
         ok, message = self._extract_current_target()
+        self._render_current_target(ok, message)
+
+    def _render_current_target(self, ok: bool, message: str, spheres: bool = True):
+        """Draw the result of the last _extract_current_target() call.
+
+        :param spheres: render points as spheres (nicer, slower); auto-process passes False
+        """
+        self.plotter.clear()
         if not ok:
             self.plotter.add_text(
                 f"No target points found ({message}).\nNext Target skips without saving.",
@@ -389,7 +438,11 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             scalars=color_scalar,
             cmap="viridis",
             point_size=3.0,
-            render_points_as_spheres=True,
+            render_points_as_spheres=spheres,
+        )
+        self.plotter.add_text(
+            f"Fit: {FIT_METHOD_LABELS.get(self.fit_method, self.fit_method)} ({self.fit_detail})",
+            position="upper_left", font_size=9,
         )
         self.plotter.reset_camera()
 
@@ -399,6 +452,8 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
         :return: (success, reason when unsuccessful)
         """
         self.processed_cloud = None
+        self.fit_method = self.fit_detail = ""
+        self.extract_message = self.extract_failure_kind = ""
         bag = self.bag_queue[self.bag_index]
         topic = self.lidar_topics[bag.lidar_name]
         lidar_bags = self.bag_groups[bag.lidar_name]
@@ -436,23 +491,43 @@ class LidarUncertaintyGUI(QtWidgets.QMainWindow):
             bounds=[x_min, x_max, y_min, y_max, z_min, z_max], invert=False
         )
 
-        # 2. Automatically clean noisy outliers using IRLS plane fitting
+        # 2. When an adjacent target has a clearly different reflectivity, keep only the
+        #    return-strength class that matches this target (no-op otherwise)
+        n_box = raw_target_subset.n_points
+        raw_target_subset, split_note = separate_by_reflectivity(
+            raw_target_subset,
+            self.targets[self.target].get("reflectivity"),
+            adjacent_target_reflectivities(self.targets, self.target),
+        )
+        if split_note:
+            print(f"{self.target}: {split_note}")
+
+        # 3. Automatically clean noisy outliers using IRLS plane fitting
         try:
             if raw_target_subset.n_points < MIN_TARGET_POINTS:
-                raise ValueError(f"only {raw_target_subset.n_points} points in the search box")
+                where = ("after the reflectivity split" if raw_target_subset.n_points < n_box
+                         else "in the search box")
+                raise ValueError(f"only {raw_target_subset.n_points} points {where}")
             self.processed_cloud, plane_params = fit_plane_irls(
                 cloud=raw_target_subset,
                 loss_function="tukey",
-                inlier_threshold=0.02,
                 target_height=target_h,
                 target_width=target_w,
             )
             if self.processed_cloud.n_points == 0:
-                raise ValueError("no points left after plane fitting")
+                raise TargetFitError("no points left after plane fitting")
         except (ValueError, IndexError) as e:
-            # Target not visible to this lidar (e.g. outside its field of view)
+            # TargetFitError: points found but no plane, ring-line or fixed-beam fit could be made.
+            # Otherwise the target is not visible to this lidar (e.g. outside its FOV).
             self.processed_cloud = None
-            print(f"No target extracted for {self.target}: {e}")
-            return False, str(e)
+            self.extract_failure_kind = "fit_failed" if isinstance(e, TargetFitError) else "no_target_points"
+            self.extract_message = f"{e}; {split_note}" if split_note else str(e)
+            print(f"No target extracted for {self.target}: {self.extract_message}")
+            return False, self.extract_message
 
+        self.fit_method = plane_params["fit_method"]
+        self.fit_detail = plane_params["fit_detail"] + (f"; {split_note}" if split_note else "")
+        if self.fit_method != "plane":
+            print(f"{self.target}: {FIT_METHOD_LABELS.get(self.fit_method, self.fit_method)} fallback "
+                  f"({self.fit_detail})")
         return True, ""

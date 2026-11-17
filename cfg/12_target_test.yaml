@@ -138,10 +138,12 @@
     x_target: 99.90
     y_target: -0.01
     z_target: 0
-    # target extraction volume (visualization only)
-    x_extent: 1.05
-    y_extent: 1.05
-    z_extent: 2
+    # target extraction volume. Wide enough to hold this target in every lidar's frame
+    # (frames disagree by up to ~1 m at 100 m) and its range-noise tails; it also holds the
+    # adjacent target, which the reflectivity split removes.
+    x_extent: 2.0
+    y_extent: 4.2
+    z_extent: 3
   target12:
     nominal_range: 100
     size: [1.0, 1.0]
@@ -151,7 +153,9 @@
     x_target: 99.93
     y_target: -1.09
     z_target: 0
-    # target extraction volume (visualization only)
-    x_extent: 1.05
-    y_extent: 1.05
-    z_extent: 2
+    # target extraction volume. Wide enough to hold this target in every lidar's frame
+    # (frames disagree by up to ~1 m at 100 m) and its range-noise tails; it also holds the
+    # adjacent target, which the reflectivity split removes.
+    x_extent: 2.0
+    y_extent: 4.2
+    z_extent: 3

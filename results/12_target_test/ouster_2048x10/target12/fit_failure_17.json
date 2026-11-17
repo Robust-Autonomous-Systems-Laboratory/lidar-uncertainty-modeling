@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ouster_2048x10",
+  "target": "target12",
+  "trial": 17,
+  "failure_kind": "no_target_points",
+  "reason": "only 0 points in the search box",
+  "bag": "/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag",
+  "recorded": "2026-11-17T03:32:54"
+}

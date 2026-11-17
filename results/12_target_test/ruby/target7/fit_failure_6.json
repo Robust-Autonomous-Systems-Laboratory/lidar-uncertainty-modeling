@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target7",
+  "trial": 6,
+  "failure_kind": "no_target_points",
+  "reason": "only 0 points in the search box",
+  "bag": "/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag",
+  "recorded": "2026-11-17T04:05:57"
+}

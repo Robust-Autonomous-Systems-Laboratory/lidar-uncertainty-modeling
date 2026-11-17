@@ -1,0 +1,9 @@
+{
+  "lidar_id": "iris",
+  "target": "target9",
+  "trial": 17,
+  "failure_kind": "fit_failed",
+  "reason": "no coherent target surface: depth scatter sigma 143 mm fills the +/-250 mm search band",
+  "bag": "/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag",
+  "recorded": "2026-11-17T02:50:45"
+}

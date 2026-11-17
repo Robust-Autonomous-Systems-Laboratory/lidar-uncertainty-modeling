@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target9",
+  "trial": 23,
+  "failure_kind": "fit_failed",
+  "reason": "plane fit rejected: target points nearly collinear (in-plane aspect 0.192 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field)",
+  "bag": "/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag",
+  "recorded": "2026-11-17T05:21:54"
+}

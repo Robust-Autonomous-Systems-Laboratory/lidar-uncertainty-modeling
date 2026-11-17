@@ -4,7 +4,11 @@ import pandas as pd
 import pyvista as pv
 
 def save_data(pointcloud: pv.DataSet, output_dir: Path | str, name: str = "control_volume_points",
-              trial_num: int | None = None) -> None:
+              trial_num: int | None = None, extra_columns: dict | None = None) -> None:
+    """Save a point cloud as VTK and CSV (plus per-scan point counts).
+
+    :param extra_columns: {column name: value} added to every CSV row (e.g. the fit method)
+    """
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -51,6 +55,8 @@ def save_data(pointcloud: pv.DataSet, output_dir: Path | str, name: str = "contr
 
     # 5. Export main CSV
     df = pd.DataFrame(data)
+    for column, value in (extra_columns or {}).items():
+        df[column] = value
     csv_path = output_dir / f"{name}_{trial_num}.csv"
     df.to_csv(csv_path, index=False)
     print(f"[DataSaver] Saved CSV: {csv_path}")

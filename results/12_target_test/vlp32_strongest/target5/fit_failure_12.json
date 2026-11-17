@@ -1,0 +1,9 @@
+{
+  "lidar_id": "vlp32_strongest",
+  "target": "target5",
+  "trial": 12,
+  "failure_kind": "fit_failed",
+  "reason": "plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",
+  "bag": "/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag",
+  "recorded": "2026-11-17T05:45:07"
+}

@@ -1,0 +1,9 @@
+{
+  "lidar_id": "ruby",
+  "target": "target7",
+  "trial": 14,
+  "failure_kind": "fit_failed",
+  "reason": "no points left after plane fitting",
+  "bag": "/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag",
+  "recorded": "2026-11-17T04:46:11"
+}

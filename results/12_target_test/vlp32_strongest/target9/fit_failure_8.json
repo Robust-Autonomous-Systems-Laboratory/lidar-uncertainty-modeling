@@ -1,0 +1,9 @@
+{
+  "lidar_id": "vlp32_strongest",
+  "target": "target9",
+  "trial": 8,
+  "failure_kind": "fit_failed",
+  "reason": "plane fit rejected: target points nearly collinear (in-plane aspect 0.054 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",
+  "bag": "/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag",
+  "recorded": "2026-11-17T05:40:30"
+}

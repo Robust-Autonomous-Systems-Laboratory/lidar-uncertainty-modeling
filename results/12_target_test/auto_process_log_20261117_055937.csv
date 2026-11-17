@@ -1,0 +1,1009 @@
+lidar_name,trial,target,status,points,fit_method,detail,bag
+iris,1,target1,saved,14757,plane,"aspect 0.90; 14757 face pts, depth gate ±35 mm",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target2,saved,7264,plane,"aspect 0.78; 7264 face pts, depth gate ±25 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target3,saved,3794,plane,"aspect 0.58; 3794 face pts, depth gate ±22 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target4,saved,4109,plane,"aspect 0.83; 4109 face pts, depth gate ±24 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target5,saved,2065,plane,"aspect 0.52; 2065 face pts, depth gate ±47 mm",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target6,saved,2315,plane,"aspect 0.70; 2315 face pts, depth gate ±20 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target7,saved,617,beam,"3 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 84 deg > 75); 617 face pts, depth gate ±69 mm",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target8,saved,180,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.122 < 0.2); 180 face pts, depth gate ±14 mm",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target9,skipped,0,,no coherent target surface: depth scatter sigma 117 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target10,saved,200,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.184 < 0.2); 200 face pts, depth gate ±19 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target11,saved,300,beam,"2 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.094 < 0.2); 300 face pts, depth gate ±32 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 619/3229 brightest pts by reflectance",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,1,target12,saved,70,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 89 deg > 75); 70 face pts, depth gate ±53 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed; reflectivity split from target11: kept 3801/4457 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_24_2026/test1_iris.bag
+iris,2,target1,saved,14209,plane,"aspect 0.88; 14209 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target2,saved,8453,plane,"aspect 0.86; 8453 face pts, depth gate ±25 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target3,saved,6360,plane,"aspect 0.94; 6360 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target4,saved,5586,plane,"aspect 0.79; 5586 face pts, depth gate ±35 mm",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target5,saved,2569,plane,"aspect 0.36; 2569 face pts, depth gate ±54 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target6,saved,2750,plane,"aspect 0.75; 2750 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target7,saved,706,plane,"aspect 0.33; 706 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target8,skipped,0,,"plane fit rejected: only 2 target points; ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target9,saved,302,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 302 face pts, depth gate ±68 mm",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target10,saved,335,beam,"3 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.185 < 0.2); 335 face pts, depth gate ±77 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target11,saved,418,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.055 < 0.2); 418 face pts, depth gate ±47 mm; reflectivity split from target12: kept 1126/2221 brightest pts by reflectance",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,2,target12,saved,490,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.058 < 0.2); 490 face pts, depth gate ±71 mm, dropped 1 post/edge scan line(s); reflectivity split from target11: kept 867/1563 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_24_2026/test2_iris.bag
+iris,5,target1,saved,9557,plane,"aspect 0.97; 9557 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target2,saved,19447,plane,"aspect 0.95; 19447 face pts, depth gate ±79 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target3,saved,4308,plane,"aspect 0.96; 4308 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target4,saved,4098,plane,"aspect 0.92; 4098 face pts, depth gate ±36 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target5,saved,320,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.045 < 0.2); 320 face pts, depth gate ±17 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target6,saved,1446,plane,"aspect 0.65; 1446 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target7,saved,1123,plane,"aspect 0.62; 1123 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target8,saved,1030,plane,"aspect 0.72; 1030 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target9,saved,537,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.055 < 0.2); 537 face pts, depth gate ±20 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target10,saved,306,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.073 < 0.2); 306 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target11,saved,1694,plane,"aspect 0.70; 1694 face pts, depth gate ±27 mm; reflectivity split from target12: kept 2069/5920 brightest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,5,target12,saved,968,plane,"aspect 0.75; 968 face pts, depth gate ±39 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed; reflectivity split from target11: kept 4354/6447 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test5_iris.bag
+iris,6,target1,saved,9354,plane,"aspect 0.96; 9354 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target2,saved,7557,plane,"aspect 0.85; 7557 face pts, depth gate ±63 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target3,saved,1586,plane,"aspect 0.61; 1586 face pts, depth gate ±24 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target4,saved,2072,plane,"aspect 0.75; 2072 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target5,saved,433,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.072 < 0.2); 433 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target6,saved,745,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.063 < 0.2); 745 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target7,saved,389,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.065 < 0.2); 389 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target8,saved,846,plane,"aspect 0.74; 846 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target9,saved,547,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.055 < 0.2); 547 face pts, depth gate ±22 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target10,saved,174,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.076 < 0.2); 174 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target11,saved,1462,plane,"aspect 0.70; 1462 face pts, depth gate ±29 mm; no reflectivity split from target12 (reflectance not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,6,target12,saved,972,plane,"aspect 0.71; 972 face pts, depth gate ±41 mm; reflectivity split from target11: kept 976/2612 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test6_iris.bag
+iris,7,target1,saved,10895,plane,"aspect 1.00; 10895 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target2,saved,14611,plane,"aspect 0.93; 14611 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target3,saved,1773,plane,"aspect 0.71; 1773 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target4,saved,4338,plane,"aspect 0.95; 4338 face pts, depth gate ±40 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target5,saved,337,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.057 < 0.2); 337 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target6,saved,1303,plane,"aspect 0.90; 1303 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target7,saved,1049,plane,"aspect 0.73; 1049 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target8,saved,401,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.067 < 0.2); 401 face pts, depth gate ±21 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target9,saved,546,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.049 < 0.2); 546 face pts, depth gate ±17 mm",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target10,saved,347,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.072 < 0.2); 347 face pts, depth gate ±31 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target11,saved,1708,plane,"aspect 0.72; 1708 face pts, depth gate ±27 mm; reflectivity split from target12: kept 1937/2280 brightest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,7,target12,saved,1010,plane,"aspect 0.80; 1010 face pts, depth gate ±38 mm; reflectivity split from target11: kept 1130/3067 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test7_iris.bag
+iris,8,target1,saved,14131,plane,"aspect 0.96; 14131 face pts, depth gate ±23 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target2,saved,18254,plane,"aspect 0.90; 18254 face pts, depth gate ±62 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target3,saved,3099,plane,"aspect 0.96; 3099 face pts, depth gate ±45 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target4,saved,3091,plane,"aspect 0.36; 3091 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target5,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target6,saved,1513,plane,"aspect 0.75; 1513 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target7,saved,1415,plane,"aspect 0.74; 1415 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target8,saved,1215,plane,"aspect 0.75; 1215 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target9,saved,1190,plane,"aspect 0.88; 1190 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target10,saved,699,plane,"aspect 0.82; 699 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target11,saved,1690,plane,"aspect 0.53; 1690 face pts, depth gate ±27 mm; reflectivity split from target12: kept 2177/3887 brightest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,8,target12,saved,1237,plane,"aspect 0.59; 1237 face pts, depth gate ±37 mm; reflectivity split from target11: kept 1710/3887 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test8_iris.bag
+iris,9,target1,saved,11473,plane,"aspect 0.98; 11473 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target2,saved,17091,plane,"aspect 0.91; 17091 face pts, depth gate ±65 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target3,saved,2271,plane,"aspect 0.71; 2271 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target4,saved,4503,plane,"aspect 0.88; 4503 face pts, depth gate ±39 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target5,saved,995,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.121 < 0.2); 995 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target6,saved,1000,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.054 < 0.2); 1000 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target7,saved,629,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.059 < 0.2); 629 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target8,saved,590,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.057 < 0.2); 590 face pts, depth gate ±29 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target9,saved,574,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.054 < 0.2); 574 face pts, depth gate ±21 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target10,saved,276,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.070 < 0.2); 276 face pts, depth gate ±28 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target11,saved,1292,plane,"aspect 0.74; 1292 face pts, depth gate ±22 mm; reflectivity split from target12: kept 1434/2469 brightest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,9,target12,saved,927,plane,"aspect 0.75; 927 face pts, depth gate ±37 mm; reflectivity split from target11: kept 1035/2469 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test9_iris.bag
+iris,10,target1,saved,10380,plane,"aspect 0.98; 10380 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target2,saved,11007,plane,"aspect 0.96; 11007 face pts, depth gate ±63 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target3,saved,2982,plane,"aspect 0.95; 2982 face pts, depth gate ±36 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target4,saved,3780,plane,"aspect 0.88; 3780 face pts, depth gate ±32 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target5,saved,2062,plane,"aspect 0.55; 2062 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target6,saved,895,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.054 < 0.2); 895 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target7,saved,1381,plane,"aspect 0.61; 1381 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target8,saved,1082,plane,"aspect 0.74; 1082 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target9,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target10,saved,479,plane,"aspect 0.60; 479 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target11,saved,1493,plane,"aspect 0.56; 1493 face pts, depth gate ±22 mm; reflectivity split from target12: kept 1644/2973 brightest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,10,target12,saved,980,plane,"aspect 0.58; 980 face pts, depth gate ±38 mm; reflectivity split from target11: kept 1329/2973 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_27_2026/test10_iris.bag
+iris,11,target1,saved,9519,plane,"aspect 0.97; 9519 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target2,saved,17310,plane,"aspect 0.94; 17310 face pts, depth gate ±53 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target3,saved,3608,plane,"aspect 0.84; 3608 face pts, depth gate ±56 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target4,saved,3759,plane,"aspect 0.92; 3759 face pts, depth gate ±37 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target5,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target6,saved,1496,plane,"aspect 0.68; 1496 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target7,saved,984,plane,"aspect 0.67; 984 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target8,saved,954,plane,"aspect 0.69; 954 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target9,saved,336,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.050 < 0.2); 336 face pts, depth gate ±14 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target10,saved,310,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.076 < 0.2); 310 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target11,saved,878,plane,"aspect 0.64; 878 face pts, depth gate ±34 mm; reflectivity split from target12: kept 4439/7789 brightest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,11,target12,saved,659,plane,"aspect 0.73; 659 face pts, depth gate ±42 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed; reflectivity split from target11: kept 3753/8035 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test11_iris.bag
+iris,12,target1,saved,8106,plane,"aspect 0.80; 8106 face pts, depth gate ±22 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target2,saved,21395,plane,"aspect 0.93; 21395 face pts, depth gate ±63 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target3,saved,4183,plane,"aspect 0.93; 4183 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target4,saved,3972,plane,"aspect 0.92; 3972 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target5,saved,1409,plane,"aspect 0.62; 1409 face pts, depth gate ±57 mm",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target6,saved,1169,plane,"aspect 0.72; 1169 face pts, depth gate ±26 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target7,saved,594,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.051 < 0.2); 594 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target8,saved,546,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.057 < 0.2); 546 face pts, depth gate ±25 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target9,saved,580,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.071 < 0.2); 580 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target10,saved,279,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.108 < 0.2); 279 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target11,saved,1418,plane,"aspect 0.61; 1418 face pts, depth gate ±26 mm; reflectivity split from target12: kept 1983/3505 brightest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,12,target12,saved,978,plane,"aspect 0.93; 978 face pts, depth gate ±45 mm; reflectivity split from target11: kept 1522/3505 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test12_iris.bag
+iris,13,target1,saved,14408,plane,"aspect 0.82; 14408 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target2,saved,20932,plane,"aspect 0.96; 20932 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target3,saved,4355,plane,"aspect 0.73; 4355 face pts, depth gate ±49 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target4,saved,5665,plane,"aspect 0.92; 5665 face pts, depth gate ±37 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target5,saved,310,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.088 < 0.2); 310 face pts, depth gate ±24 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target6,saved,3220,plane,"aspect 0.67; 3220 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target7,saved,859,plane,"aspect 0.63; 859 face pts, depth gate ±33 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target8,saved,301,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.097 < 0.2); 301 face pts, depth gate ±89 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target9,saved,627,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.057 < 0.2); 627 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target10,saved,281,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.067 < 0.2); 281 face pts, depth gate ±72 mm",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target11,saved,1628,plane,"aspect 0.51; 1628 face pts, depth gate ±27 mm; reflectivity split from target12: kept 1778/2451 brightest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,13,target12,saved,986,plane,"aspect 0.51; 986 face pts, depth gate ±46 mm; reflectivity split from target11: kept 1018/2794 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test13_iris.bag
+iris,14,target1,saved,12972,plane,"aspect 0.89; 12972 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target2,saved,23206,plane,"aspect 0.97; 23206 face pts, depth gate ±75 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target3,saved,4254,plane,"aspect 0.86; 4254 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target4,saved,4128,plane,"aspect 0.86; 4128 face pts, depth gate ±39 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target5,saved,1441,plane,"aspect 0.71; 1441 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target6,saved,2802,plane,"aspect 0.88; 2802 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target7,saved,1883,plane,"aspect 0.76; 1883 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target8,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target9,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target10,saved,219,beam,"2 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.118 < 0.2); 219 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target11,saved,788,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.023 < 0.2); 788 face pts, depth gate ±28 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 2496/3964 brightest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,14,target12,saved,341,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.073 < 0.2); 341 face pts, depth gate ±38 mm, dropped 2 post/edge scan line(s); reflectivity split from target11: kept 830/1239 dimmest pts by reflectance",/home/quin/data/12_target_test/sept_28_2026/test14_iris.bag
+iris,16,target1,saved,16063,plane,"aspect 0.87; 16063 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target2,saved,26277,plane,"aspect 0.97; 26277 face pts, depth gate ±72 mm",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target3,saved,7048,plane,"aspect 0.95; 7048 face pts, depth gate ±51 mm",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target4,saved,3394,plane,"aspect 0.32; 3394 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target5,saved,419,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.082 < 0.2); 419 face pts, depth gate ±21 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target6,saved,3164,plane,"aspect 0.48; 3164 face pts, depth gate ±28 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target7,saved,1598,ring_line,"2 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.076 < 0.2); 1598 face pts, depth gate ±28 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target8,saved,738,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.058 < 0.2); 738 face pts, depth gate ±23 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target9,saved,485,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.083 < 0.2); 485 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target10,saved,442,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.100 < 0.2); 442 face pts, depth gate ±42 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target11,saved,827,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.031 < 0.2); 827 face pts, depth gate ±30 mm; reflectivity split from target12: kept 1805/2458 brightest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,16,target12,saved,376,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.044 < 0.2); 376 face pts, depth gate ±38 mm; reflectivity split from target11: kept 936/2974 dimmest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test16_iris.bag
+iris,17,target1,saved,12797,plane,"aspect 0.92; 12797 face pts, depth gate ±24 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target2,saved,21181,plane,"aspect 0.99; 21181 face pts, depth gate ±56 mm",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target3,saved,3881,plane,"aspect 0.82; 3881 face pts, depth gate ±76 mm",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target4,saved,5248,plane,"aspect 0.81; 5248 face pts, depth gate ±55 mm",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target5,saved,1798,plane,"aspect 0.62; 1798 face pts, depth gate ±48 mm",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target6,saved,2653,plane,"aspect 0.78; 2653 face pts, depth gate ±33 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target7,saved,488,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.094 < 0.2); 488 face pts, depth gate ±24 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target8,skipped,0,,only 1 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target9,skipped,0,,no coherent target surface: depth scatter sigma 143 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target10,skipped,0,,no coherent target surface: depth scatter sigma 159 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target11,saved,69,beam,"1 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 89 deg > 75); 69 face pts, depth gate ±5 mm; reflectivity split from target12: kept 71/1828 brightest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,17,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_iris.bag
+iris,18,target1,saved,10566,plane,"aspect 0.86; 10566 face pts, depth gate ±25 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target2,saved,19841,plane,"aspect 0.92; 19841 face pts, depth gate ±76 mm",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target3,saved,3056,plane,"aspect 0.51; 3056 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target4,saved,5749,plane,"aspect 0.88; 5749 face pts, depth gate ±55 mm",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target5,saved,347,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.066 < 0.2); 347 face pts, depth gate ±24 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target6,saved,3338,plane,"aspect 0.80; 3338 face pts, depth gate ±51 mm",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target7,saved,1559,ring_line,"2 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.177 < 0.2); 1559 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target8,saved,573,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.062 < 0.2); 573 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target9,saved,415,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.069 < 0.2); 415 face pts, depth gate ±27 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target10,saved,423,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.105 < 0.2); 423 face pts, depth gate ±40 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target11,saved,3039,plane,"aspect 0.68; 3039 face pts, depth gate ±23 mm; reflectivity split from target12: kept 3244/5169 brightest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,18,target12,saved,1771,plane,"aspect 0.55; 1771 face pts, depth gate ±40 mm; reflectivity split from target11: kept 1925/2755 dimmest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test18_iris.bag
+iris,19,target1,saved,9026,plane,"aspect 0.81; 9026 face pts, depth gate ±22 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target2,saved,23660,plane,"aspect 0.95; 23660 face pts, depth gate ±77 mm",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target3,saved,3479,plane,"aspect 0.61; 3479 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target4,saved,4480,plane,"aspect 0.92; 4480 face pts, depth gate ±42 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target5,saved,1586,plane,"aspect 0.70; 1586 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target6,saved,2526,plane,"aspect 0.78; 2526 face pts, depth gate ±33 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target7,saved,1493,plane,"aspect 0.74; 1493 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target8,saved,1003,plane,"aspect 0.54; 1003 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target9,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target10,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target11,saved,1871,plane,"aspect 0.50; 1871 face pts, depth gate ±24 mm; reflectivity split from target12: kept 2367/5677 brightest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,19,target12,saved,1157,plane,"aspect 0.49; 1157 face pts, depth gate ±45 mm, dropped 1 post/edge scan line(s), excluded 1 depth-incoherent clutter scan line(s) after first fit failed; reflectivity split from target11: kept 3782/6181 dimmest pts by reflectance",/home/quin/data/12_target_test/oct_5_2026/test19_iris.bag
+iris,21,target1,saved,6935,plane,"aspect 0.98; 6935 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target2,saved,15754,plane,"aspect 0.80; 15754 face pts, depth gate ±86 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target3,saved,1851,plane,"aspect 0.71; 1851 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target4,saved,3976,plane,"aspect 0.96; 3976 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target5,saved,446,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.076 < 0.2); 446 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target6,saved,855,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.058 < 0.2); 855 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target7,saved,1008,plane,"aspect 0.70; 1008 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target8,saved,641,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.059 < 0.2); 641 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target9,saved,367,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.053 < 0.2); 367 face pts, depth gate ±18 mm",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target10,saved,322,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.080 < 0.2); 322 face pts, depth gate ±32 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target11,saved,1688,plane,"aspect 0.75; 1688 face pts, depth gate ±25 mm; reflectivity split from target12: kept 1904/3001 brightest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,21,target12,saved,974,plane,"aspect 0.77; 974 face pts, depth gate ±40 mm; reflectivity split from target11: kept 1097/3001 dimmest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test21_iris.bag
+iris,22,target1,saved,7709,plane,"aspect 0.96; 7709 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target2,saved,14947,plane,"aspect 0.96; 14947 face pts, depth gate ±101 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target3,saved,1905,plane,"aspect 0.70; 1905 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target4,saved,5778,plane,"aspect 0.81; 5778 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target5,saved,821,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.175 < 0.2); 821 face pts, depth gate ±54 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target6,saved,645,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.049 < 0.2); 645 face pts, depth gate ±19 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target7,saved,1248,plane,"aspect 0.63; 1248 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target8,saved,965,plane,"aspect 0.67; 965 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target9,saved,469,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.109 < 0.2); 469 face pts, depth gate ±36 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target10,saved,393,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.074 < 0.2); 393 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target11,saved,1746,plane,"aspect 0.60; 1746 face pts, depth gate ±25 mm; reflectivity split from target12: kept 1879/2752 brightest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,22,target12,saved,1112,plane,"aspect 0.61; 1112 face pts, depth gate ±46 mm; reflectivity split from target11: kept 1296/3182 dimmest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test22_iris.bag
+iris,23,target1,saved,7165,plane,"aspect 0.99; 7165 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target2,saved,16897,plane,"aspect 0.94; 16897 face pts, depth gate ±87 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target3,saved,1642,plane,"aspect 0.73; 1642 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target4,saved,5453,plane,"aspect 0.80; 5453 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target5,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target6,saved,632,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.052 < 0.2); 632 face pts, depth gate ±19 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target7,saved,1136,plane,"aspect 0.65; 1136 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target8,saved,485,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.082 < 0.2); 485 face pts, depth gate ±26 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target9,saved,423,beam,"2 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.080 < 0.2); 423 face pts, depth gate ±19 mm",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target10,saved,204,beam,"2 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.105 < 0.2); 204 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target11,saved,652,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.038 < 0.2); 652 face pts, depth gate ±24 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 1024/2145 brightest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,23,target12,saved,535,plane,"aspect 0.60; 535 face pts, depth gate ±44 mm; no reflectivity split from target11 (reflectance not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test23_iris.bag
+iris,24,target1,saved,13263,plane,"aspect 0.81; 13263 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target2,saved,21304,plane,"aspect 0.83; 21304 face pts, depth gate ±83 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target3,saved,2183,plane,"aspect 0.72; 2183 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target4,saved,4842,plane,"aspect 0.96; 4842 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target5,saved,369,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.069 < 0.2); 369 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target6,saved,738,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.050 < 0.2); 738 face pts, depth gate ±17 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target7,saved,950,plane,"aspect 0.78; 950 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target8,saved,645,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.055 < 0.2); 645 face pts, depth gate ±24 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target9,saved,497,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.067 < 0.2); 497 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target10,saved,331,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.079 < 0.2); 331 face pts, depth gate ±31 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target11,saved,1674,plane,"aspect 0.71; 1674 face pts, depth gate ±26 mm; reflectivity split from target12: kept 2081/3366 brightest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,24,target12,saved,1007,plane,"aspect 0.72; 1007 face pts, depth gate ±43 mm; reflectivity split from target11: kept 1285/3366 dimmest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test24_iris.bag
+iris,25,target1,saved,10383,plane,"aspect 1.00; 10383 face pts, depth gate ±25 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target2,saved,18964,plane,"aspect 0.86; 18964 face pts, depth gate ±76 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target3,saved,1835,plane,"aspect 0.71; 1835 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target4,saved,4576,plane,"aspect 0.97; 4576 face pts, depth gate ±40 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target5,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target6,saved,859,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.057 < 0.2); 859 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target7,saved,1172,plane,"aspect 0.64; 1172 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target8,saved,534,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.077 < 0.2); 534 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target9,saved,431,beam,"2 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.103 < 0.2); 431 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target10,saved,148,beam,"1 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 148 face pts, depth gate ±18 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target11,saved,1637,plane,"aspect 0.70; 1637 face pts, depth gate ±27 mm; reflectivity split from target12: kept 1637/3034 brightest pts by reflectance",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+iris,25,target12,saved,956,plane,"aspect 0.60; 956 face pts, depth gate ±43 mm; no reflectivity split from target11 (reflectance not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test25_iris.bag
+ouster_2048x10,1,target1,saved,1549,plane,"aspect 0.87; 1549 face pts, depth gate ±53 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target2,saved,2820,plane,"aspect 0.84; 2820 face pts, depth gate ±89 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target3,saved,549,plane,"aspect 0.72; 549 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target4,saved,973,plane,"aspect 0.92; 973 face pts, depth gate ±112 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target5,saved,310,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 310 face pts, depth gate ±117 mm, dropped 1 post/edge scan line(s), excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target6,saved,513,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 513 face pts, depth gate ±246 mm, dropped 1 post/edge scan line(s), excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target8,skipped,0,,only 2 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target9,saved,251,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 251 face pts, depth gate ±212 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target10,skipped,0,,no coherent target surface: depth scatter sigma 113 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target11,skipped,0,,no coherent target surface: depth scatter sigma 90 mm fills the +/-250 mm search band; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,1,target12,skipped,0,,no coherent target surface: depth scatter sigma 90 mm fills the +/-250 mm search band; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/sept_24_2026/test1_ouster_2048x10.bag
+ouster_2048x10,2,target1,saved,1409,plane,"aspect 0.85; 1409 face pts, depth gate ±50 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target2,saved,1949,plane,"aspect 0.86; 1949 face pts, depth gate ±59 mm",/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target3,saved,450,plane,"aspect 0.79; 450 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target4,saved,883,plane,"aspect 0.74; 883 face pts, depth gate ±111 mm",/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target5,saved,154,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 154 face pts, depth gate ±75 mm, excluded 3 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target6,saved,265,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 265 face pts, depth gate ±218 mm, excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target8,skipped,0,,no coherent target surface: depth scatter sigma 122 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,2,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ouster_2048x10.bag
+ouster_2048x10,5,target1,saved,1626,plane,"aspect 0.77; 1626 face pts, depth gate ±181 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target2,saved,2119,plane,"aspect 0.84; 2119 face pts, depth gate ±63 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target3,saved,505,plane,"aspect 0.76; 505 face pts, depth gate ±77 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target4,saved,907,plane,"aspect 0.83; 907 face pts, depth gate ±117 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target5,saved,260,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 260 face pts, depth gate ±104 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target6,skipped,0,,no coherent target surface: depth scatter sigma 84 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target7,saved,244,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 244 face pts, depth gate ±147 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target8,saved,143,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 143 face pts, depth gate ±104 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target9,skipped,0,,no coherent target surface: depth scatter sigma 112 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target11,saved,384,plane,"aspect 0.34; 384 face pts, depth gate ±222 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,5,target12,saved,384,plane,"aspect 0.34; 384 face pts, depth gate ±222 mm; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test5_ouster_2048x10.bag
+ouster_2048x10,6,target1,saved,1426,plane,"aspect 0.80; 1426 face pts, depth gate ±52 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target2,saved,2094,plane,"aspect 0.86; 2094 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target3,saved,621,plane,"aspect 0.94; 621 face pts, depth gate ±95 mm",/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target4,saved,1072,plane,"aspect 0.73; 1072 face pts, depth gate ±127 mm",/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target5,saved,350,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 350 face pts, depth gate ±110 mm",/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target6,skipped,0,,no coherent target surface: depth scatter sigma 89 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target7,skipped,0,,only 1 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target11,skipped,0,,no coherent target surface: depth scatter sigma 90 mm fills the +/-250 mm search band; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,6,target12,skipped,0,,no coherent target surface: depth scatter sigma 90 mm fills the +/-250 mm search band; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/sept_27_2026/test6_ouster_2048x10.bag
+ouster_2048x10,7,target1,saved,1416,plane,"aspect 0.74; 1416 face pts, depth gate ±65 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target2,saved,2160,plane,"aspect 0.88; 2160 face pts, depth gate ±61 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target3,saved,542,plane,"aspect 0.76; 542 face pts, depth gate ±73 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target4,saved,859,plane,"aspect 0.83; 859 face pts, depth gate ±108 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target5,saved,333,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 333 face pts, depth gate ±130 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target6,saved,856,plane,"aspect 0.53; 856 face pts, depth gate ±196 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target7,saved,349,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 349 face pts, depth gate ±142 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target8,skipped,0,,no coherent target surface: depth scatter sigma 114 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target9,saved,266,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 266 face pts, depth gate ±207 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target10,saved,29,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 29 face pts, depth gate ±75 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target11,saved,481,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 481 face pts, depth gate ±209 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,7,target12,saved,333,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 333 face pts, depth gate ±209 mm; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test7_ouster_2048x10.bag
+ouster_2048x10,8,target1,saved,1441,plane,"aspect 0.83; 1441 face pts, depth gate ±59 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target2,saved,2381,plane,"aspect 0.84; 2381 face pts, depth gate ±68 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target3,saved,637,plane,"aspect 0.85; 637 face pts, depth gate ±97 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target4,saved,947,plane,"aspect 0.98; 947 face pts, depth gate ±127 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target5,saved,279,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 279 face pts, depth gate ±109 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target6,saved,910,plane,"aspect 0.81; 910 face pts, depth gate ±250 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target7,saved,237,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 237 face pts, depth gate ±152 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target8,skipped,0,,no coherent target surface: depth scatter sigma 105 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target9,saved,220,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 220 face pts, depth gate ±239 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target10,saved,47,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 47 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target11,saved,402,plane,"aspect 0.77; 402 face pts, depth gate ±224 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,8,target12,saved,402,plane,"aspect 0.77; 402 face pts, depth gate ±224 mm; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test8_ouster_2048x10.bag
+ouster_2048x10,9,target1,saved,1496,plane,"aspect 0.83; 1496 face pts, depth gate ±68 mm",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target2,saved,2198,plane,"aspect 0.84; 2198 face pts, depth gate ±63 mm",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target3,saved,464,plane,"aspect 0.82; 464 face pts, depth gate ±79 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target4,saved,935,plane,"aspect 0.73; 935 face pts, depth gate ±116 mm",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target5,saved,350,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 350 face pts, depth gate ±138 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target6,skipped,0,,no coherent target surface: depth scatter sigma 83 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target7,saved,393,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 393 face pts, depth gate ±189 mm",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target8,skipped,0,,no coherent target surface: depth scatter sigma 109 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target9,skipped,0,,no coherent target surface: depth scatter sigma 87 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target10,saved,22,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 22 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target11,saved,604,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.185 < 0.2); 604 face pts, depth gate ±206 mm, dropped 1 post/edge scan line(s); no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,9,target12,saved,604,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.185 < 0.2); 604 face pts, depth gate ±206 mm, dropped 1 post/edge scan line(s); no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test9_ouster_2048x10.bag
+ouster_2048x10,10,target1,saved,1697,plane,"aspect 0.71; 1697 face pts, depth gate ±96 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target2,saved,2205,plane,"aspect 0.83; 2205 face pts, depth gate ±69 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target3,saved,536,plane,"aspect 0.77; 536 face pts, depth gate ±88 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target4,saved,1077,plane,"aspect 0.84; 1077 face pts, depth gate ±189 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target5,saved,266,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 266 face pts, depth gate ±106 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target6,skipped,0,,no coherent target surface: depth scatter sigma 85 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target7,saved,373,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 373 face pts, depth gate ±159 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target8,skipped,0,,no coherent target surface: depth scatter sigma 127 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target9,skipped,0,,no coherent target surface: depth scatter sigma 115 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target11,saved,487,plane,"aspect 0.36; 487 face pts, depth gate ±213 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,10,target12,saved,224,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 224 face pts, depth gate ±224 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_27_2026/test10_ouster_2048x10.bag
+ouster_2048x10,11,target1,saved,1384,plane,"aspect 0.76; 1384 face pts, depth gate ±51 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target2,saved,2194,plane,"aspect 0.84; 2194 face pts, depth gate ±66 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target3,saved,569,plane,"aspect 0.90; 569 face pts, depth gate ±79 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target4,saved,1022,plane,"aspect 0.73; 1022 face pts, depth gate ±119 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target5,saved,308,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 308 face pts, depth gate ±121 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target6,saved,672,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 672 face pts, depth gate ±246 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target7,saved,334,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 334 face pts, depth gate ±132 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target8,skipped,0,,no coherent target surface: depth scatter sigma 110 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target9,saved,293,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 293 face pts, depth gate ±216 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target11,saved,350,plane,"aspect 0.51; 350 face pts, depth gate ±210 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,11,target12,skipped,0,,no coherent target surface: depth scatter sigma 83 mm fills the +/-250 mm search band; reflectivity split from target11: kept 68/350 dimmest pts by reflectivity,/home/quin/data/12_target_test/sept_28_2026/test11_ouster_2048x10.bag
+ouster_2048x10,12,target1,saved,1281,plane,"aspect 0.74; 1281 face pts, depth gate ±49 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target2,saved,2134,plane,"aspect 0.88; 2134 face pts, depth gate ±64 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target3,saved,504,plane,"aspect 0.73; 504 face pts, depth gate ±69 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target4,saved,861,plane,"aspect 0.85; 861 face pts, depth gate ±111 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target5,saved,312,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 312 face pts, depth gate ±121 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target6,saved,491,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 491 face pts, depth gate ±244 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target7,skipped,0,,only 8 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target11,skipped,0,,only 4 points after the reflectivity split; reflectivity split from target12: kept 4/19 brightest pts by reflectivity,/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,12,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_ouster_2048x10.bag
+ouster_2048x10,13,target1,saved,1340,plane,"aspect 0.74; 1340 face pts, depth gate ±50 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target2,saved,2131,plane,"aspect 0.85; 2131 face pts, depth gate ±66 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target3,saved,550,plane,"aspect 0.86; 550 face pts, depth gate ±83 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target4,saved,933,plane,"aspect 0.71; 933 face pts, depth gate ±109 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target5,saved,339,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 339 face pts, depth gate ±143 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target6,skipped,0,,no coherent target surface: depth scatter sigma 84 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target7,saved,221,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 221 face pts, depth gate ±133 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target8,skipped,0,,no coherent target surface: depth scatter sigma 115 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target9,saved,294,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 294 face pts, depth gate ±9 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target11,saved,675,plane,"aspect 0.57; 675 face pts, depth gate ±187 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,13,target12,saved,538,plane,"aspect 0.48; 538 face pts, depth gate ±188 mm; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_28_2026/test13_ouster_2048x10.bag
+ouster_2048x10,14,target1,saved,1327,plane,"aspect 0.73; 1327 face pts, depth gate ±50 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target2,saved,2089,plane,"aspect 0.84; 2089 face pts, depth gate ±65 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target3,saved,521,plane,"aspect 0.72; 521 face pts, depth gate ±73 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target4,saved,1023,plane,"aspect 0.74; 1023 face pts, depth gate ±122 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target5,saved,264,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 264 face pts, depth gate ±100 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target6,skipped,0,,no coherent target surface: depth scatter sigma 86 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target7,saved,160,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 160 face pts, depth gate ±167 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target8,saved,58,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 58 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target9,skipped,0,,only 2 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target11,saved,138,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 138 face pts, depth gate ±217 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 154/561 brightest pts by reflectivity",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,14,target12,saved,137,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 137 face pts, depth gate ±5 mm, dropped 1 post/edge scan line(s); no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_28_2026/test14_ouster_2048x10.bag
+ouster_2048x10,16,target1,skipped,0,,no coherent target surface: depth scatter sigma 156 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target2,saved,2358,plane,"aspect 0.80; 2358 face pts, depth gate ±76 mm",/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target3,saved,637,plane,"aspect 0.95; 637 face pts, depth gate ±91 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target4,saved,977,plane,"aspect 0.86; 977 face pts, depth gate ±116 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target5,saved,189,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 189 face pts, depth gate ±164 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target6,saved,191,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 191 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,16,target12,saved,77,beam,"2 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.180 < 0.2); 77 face pts, depth gate ±209 mm; reflectivity split from target11: kept 81/199 dimmest pts by reflectivity",/home/quin/data/12_target_test/oct_5_2026/test16_ouster_2048x10.bag
+ouster_2048x10,17,target1,saved,1275,plane,"aspect 0.77; 1275 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target2,saved,2044,plane,"aspect 0.85; 2044 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target3,saved,783,plane,"aspect 0.63; 783 face pts, depth gate ±181 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target4,saved,689,plane,"aspect 0.88; 689 face pts, depth gate ±173 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target5,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target6,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,17,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_ouster_2048x10.bag
+ouster_2048x10,18,target1,saved,2320,plane,"aspect 0.77; 2320 face pts, depth gate ±248 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target2,saved,2266,plane,"aspect 0.87; 2266 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target3,saved,552,plane,"aspect 0.82; 552 face pts, depth gate ±90 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target4,saved,872,plane,"aspect 0.98; 872 face pts, depth gate ±112 mm",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target5,saved,284,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 284 face pts, depth gate ±138 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target6,skipped,0,,no coherent target surface: depth scatter sigma 92 mm fills the +/-250 mm search band; retry without 3 clutter scan line(s) also failed: no coherent target surface: depth scatter sigma 84 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target7,saved,219,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 219 face pts, depth gate ±138 mm",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target8,skipped,0,,no coherent target surface: depth scatter sigma 114 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target9,saved,184,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 184 face pts, depth gate ±246 mm",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target10,saved,73,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 73 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target11,saved,343,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 343 face pts, depth gate ±200 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,18,target12,saved,187,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 187 face pts, depth gate ±205 mm; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_5_2026/test18_ouster_2048x10.bag
+ouster_2048x10,19,target1,saved,1844,plane,"aspect 0.76; 1844 face pts, depth gate ±93 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target2,saved,2092,plane,"aspect 0.86; 2092 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target3,saved,542,plane,"aspect 0.86; 542 face pts, depth gate ±80 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target4,saved,951,plane,"aspect 0.73; 951 face pts, depth gate ±114 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target5,saved,271,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 271 face pts, depth gate ±105 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target6,saved,757,plane,"aspect 0.93; 757 face pts, depth gate ±241 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target7,saved,227,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 227 face pts, depth gate ±134 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target8,skipped,0,,no coherent target surface: depth scatter sigma 123 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target9,skipped,0,,no coherent target surface: depth scatter sigma 93 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target11,saved,418,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 418 face pts, depth gate ±242 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 1179/1618 brightest pts by reflectivity",/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,19,target12,skipped,0,,no coherent target surface: depth scatter sigma 87 mm fills the +/-250 mm search band; no reflectivity split from target11 (reflectivity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/oct_5_2026/test19_ouster_2048x10.bag
+ouster_2048x10,21,target1,saved,1300,plane,"aspect 0.73; 1300 face pts, depth gate ±52 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target2,saved,3247,plane,"aspect 0.88; 3247 face pts, depth gate ±95 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target3,saved,698,plane,"aspect 0.76; 698 face pts, depth gate ±77 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target4,saved,996,plane,"aspect 0.94; 996 face pts, depth gate ±127 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target5,saved,986,plane,"aspect 0.63; 986 face pts, depth gate ±191 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target6,saved,1073,plane,"aspect 0.68; 1073 face pts, depth gate ±211 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target7,saved,413,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 413 face pts, depth gate ±189 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target8,skipped,0,,no coherent target surface: depth scatter sigma 119 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target9,skipped,0,,no coherent target surface: depth scatter sigma 86 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target10,saved,5,beam,"1 fixed beam(s); plane rejected: only 5 target points (plane needs 10); 5 face pts, depth gate ±49 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target11,saved,605,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 605 face pts, depth gate ±227 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 611/640 brightest pts by reflectivity",/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,21,target12,skipped,0,,no coherent target surface: depth scatter sigma 114 mm fills the +/-250 mm search band; reflectivity split from target11: kept 26/514 dimmest pts by reflectivity,/home/quin/data/12_target_test/oct_14_2026/test21_ouster_2048x10.bag
+ouster_2048x10,22,target1,saved,2348,plane,"aspect 0.74; 2348 face pts, depth gate ±83 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target2,saved,2076,plane,"aspect 0.90; 2076 face pts, depth gate ±85 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target3,saved,493,plane,"aspect 0.71; 493 face pts, depth gate ±86 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target4,saved,949,plane,"aspect 0.76; 949 face pts, depth gate ±119 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target5,saved,355,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 355 face pts, depth gate ±137 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target6,saved,700,plane,"aspect 0.89; 700 face pts, depth gate ±248 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target7,saved,359,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 359 face pts, depth gate ±151 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target8,skipped,0,,no coherent target surface: depth scatter sigma 117 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target9,saved,266,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 266 face pts, depth gate ±201 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target10,skipped,0,,no coherent target surface: depth scatter sigma 158 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target11,saved,326,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 326 face pts, depth gate ±222 mm; reflectivity split from target12: kept 490/587 brightest pts by reflectivity",/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,22,target12,skipped,0,,no coherent target surface: depth scatter sigma 91 mm fills the +/-250 mm search band; reflectivity split from target11: kept 97/587 dimmest pts by reflectivity,/home/quin/data/12_target_test/oct_14_2026/test22_ouster_2048x10.bag
+ouster_2048x10,23,target1,saved,1383,plane,"aspect 0.73; 1383 face pts, depth gate ±61 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target2,saved,2372,plane,"aspect 0.81; 2372 face pts, depth gate ±71 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target3,saved,550,plane,"aspect 0.80; 550 face pts, depth gate ±91 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target4,saved,1260,plane,"aspect 0.86; 1260 face pts, depth gate ±180 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target5,saved,369,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 369 face pts, depth gate ±117 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target6,saved,680,plane,"aspect 0.89; 680 face pts, depth gate ±233 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target7,saved,30,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 30 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target11,skipped,0,,no coherent target surface: depth scatter sigma 231 mm fills the +/-250 mm search band; reflectivity split from target12: kept 19/48 brightest pts by reflectivity,/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,23,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_ouster_2048x10.bag
+ouster_2048x10,24,target1,saved,1216,plane,"aspect 0.70; 1216 face pts, depth gate ±49 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target2,saved,1609,plane,"aspect 0.84; 1609 face pts, depth gate ±62 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target3,saved,566,plane,"aspect 0.86; 566 face pts, depth gate ±72 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target4,saved,964,plane,"aspect 0.74; 964 face pts, depth gate ±112 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target5,saved,303,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 303 face pts, depth gate ±120 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target6,saved,606,plane,"aspect 0.87; 606 face pts, depth gate ±246 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target7,saved,49,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 49 face pts, depth gate ±5 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target11,skipped,0,,only 8 points in the search box; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,24,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_ouster_2048x10.bag
+ouster_2048x10,25,target1,saved,1351,plane,"aspect 0.76; 1351 face pts, depth gate ±58 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target2,saved,2021,plane,"aspect 0.81; 2021 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target3,saved,503,plane,"aspect 0.83; 503 face pts, depth gate ±74 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target4,saved,985,plane,"aspect 0.72; 985 face pts, depth gate ±120 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target5,saved,424,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 424 face pts, depth gate ±141 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target6,saved,999,plane,"aspect 0.63; 999 face pts, depth gate ±236 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target7,saved,231,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 231 face pts, depth gate ±144 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target8,skipped,0,,no coherent target surface: depth scatter sigma 124 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target9,saved,276,beam,"2 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 276 face pts, depth gate ±191 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target10,saved,54,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); 54 face pts, depth gate ±101 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target11,saved,466,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 466 face pts, depth gate ±211 mm; no reflectivity split from target12 (reflectivity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ouster_2048x10,25,target12,saved,12,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 12 face pts, depth gate ±243 mm; reflectivity split from target11: kept 15/183 dimmest pts by reflectivity",/home/quin/data/12_target_test/oct_14_2026/test25_ouster_2048x10.bag
+ruby,1,target1,saved,543,plane,"aspect 0.97; 543 face pts, depth gate ±25 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target2,saved,714,plane,"aspect 0.90; 714 face pts, depth gate ±31 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target3,saved,171,plane,"aspect 0.93; 171 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target4,saved,280,plane,"aspect 0.69; 280 face pts, depth gate ±55 mm",/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target5,saved,133,plane,"aspect 0.76; 133 face pts, depth gate ±88 mm, dropped 1 post/edge scan line(s), excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target6,skipped,0,,no coherent target surface: depth scatter sigma 132 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target7,skipped,0,,no coherent target surface: depth scatter sigma 133 mm fills the +/-250 mm search band; retry without 2 clutter scan line(s) also failed: plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target8,skipped,0,,no coherent target surface: depth scatter sigma 117 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.197 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target9,skipped,0,,no points left after plane fitting; retry without 3 clutter scan line(s) also failed: plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target10,skipped,0,,no coherent target surface: depth scatter sigma 142 mm fills the +/-250 mm search band; retry without 2 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target11,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); reflectivity split from target12: kept 127/292 brightest pts by intensity,/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,1,target12,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.114 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.199 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); reflectivity split from target11: kept 200/347 dimmest pts by intensity,/home/quin/data/12_target_test/sept_24_2026/test1_ruby.bag
+ruby,2,target1,saved,550,plane,"aspect 0.95; 550 face pts, depth gate ±23 mm, dropped 5 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target2,saved,485,plane,"aspect 0.73; 485 face pts, depth gate ±27 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target3,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.102 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target4,skipped,0,,no coherent target surface: depth scatter sigma 140 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.127 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target5,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.138 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target6,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); retry without 1 clutter scan line(s) also failed: plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target7,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target8,saved,111,plane,"aspect 0.82; 111 face pts, depth gate ±121 mm, dropped 1 post/edge scan line(s), excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target9,skipped,0,,no coherent target surface: depth scatter sigma 130 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target10,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,2,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_ruby.bag
+ruby,5,target1,saved,541,plane,"aspect 0.92; 541 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target2,saved,828,plane,"aspect 0.98; 828 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target3,saved,250,plane,"aspect 0.78; 250 face pts, depth gate ±45 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target4,saved,336,plane,"aspect 0.85; 336 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target5,saved,177,plane,"aspect 0.60; 177 face pts, depth gate ±139 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target6,saved,43,plane,"aspect 0.54; 43 face pts, depth gate ±44 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target7,saved,72,plane,"aspect 0.80; 72 face pts, depth gate ±66 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target8,saved,141,plane,"aspect 0.91; 141 face pts, depth gate ±76 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target9,skipped,0,,plane fit rejected: only 8 target points (plane needs 10); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.092 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target10,saved,83,plane,"aspect 0.90; 83 face pts, depth gate ±86 mm",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target11,saved,150,plane,"aspect 0.73; 150 face pts, depth gate ±94 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 261/699 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,5,target12,saved,203,plane,"aspect 0.78; 203 face pts, depth gate ±110 mm, dropped 2 post/edge scan line(s); reflectivity split from target11: kept 437/698 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test5_ruby.bag
+ruby,6,target1,saved,461,plane,"aspect 0.91; 461 face pts, depth gate ±20 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target2,saved,780,plane,"aspect 0.96; 780 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target3,saved,261,plane,"aspect 0.89; 261 face pts, depth gate ±54 mm",/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target4,saved,197,plane,"aspect 0.67; 197 face pts, depth gate ±48 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target5,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); retry without 2 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.186 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target6,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,6,target12,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); reflectivity split from target11: kept 15/29 dimmest pts by intensity,/home/quin/data/12_target_test/sept_27_2026/test6_ruby.bag
+ruby,7,target1,saved,601,plane,"aspect 0.95; 601 face pts, depth gate ±26 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target2,saved,815,plane,"aspect 0.93; 815 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target3,saved,247,plane,"aspect 0.80; 247 face pts, depth gate ±48 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target4,saved,219,plane,"aspect 0.79; 219 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target5,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.172 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target6,saved,130,plane,"aspect 0.95; 130 face pts, depth gate ±60 mm",/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target7,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,7,target12,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.111 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); reflectivity split from target11: kept 85/257 dimmest pts by intensity,/home/quin/data/12_target_test/sept_27_2026/test7_ruby.bag
+ruby,8,target1,saved,532,plane,"aspect 0.96; 532 face pts, depth gate ±23 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target2,saved,689,plane,"aspect 0.94; 689 face pts, depth gate ±26 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target3,saved,251,plane,"aspect 0.80; 251 face pts, depth gate ±40 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target4,saved,284,plane,"aspect 0.75; 284 face pts, depth gate ±65 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target5,saved,33,plane,"aspect 0.61; 33 face pts, depth gate ±61 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target6,saved,96,plane,"aspect 0.79; 96 face pts, depth gate ±47 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target7,saved,139,plane,"aspect 0.75; 139 face pts, depth gate ±131 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target8,saved,45,plane,"aspect 0.53; 45 face pts, depth gate ±46 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target9,saved,60,plane,"aspect 0.93; 60 face pts, depth gate ±123 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target10,saved,75,plane,"aspect 0.79; 75 face pts, depth gate ±89 mm",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target11,saved,91,plane,"aspect 0.74; 91 face pts, depth gate ±78 mm, dropped 3 post/edge scan line(s); reflectivity split from target12: kept 420/1057 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,8,target12,saved,311,plane,"aspect 0.95; 311 face pts, depth gate ±108 mm; reflectivity split from target11: kept 684/1145 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test8_ruby.bag
+ruby,9,target1,saved,510,plane,"aspect 0.96; 510 face pts, depth gate ±23 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target2,saved,641,plane,"aspect 0.92; 641 face pts, depth gate ±25 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target3,saved,190,plane,"aspect 0.69; 190 face pts, depth gate ±39 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target4,saved,254,plane,"aspect 0.79; 254 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target5,saved,112,plane,"aspect 0.84; 112 face pts, depth gate ±78 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target6,saved,68,plane,"aspect 0.46; 68 face pts, depth gate ±161 mm, dropped 6 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target7,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target8,saved,110,plane,"aspect 0.64; 110 face pts, depth gate ±80 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target9,saved,76,plane,"aspect 0.74; 76 face pts, depth gate ±105 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target10,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.147 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target11,saved,158,plane,"aspect 0.66; 158 face pts, depth gate ±117 mm, dropped 3 post/edge scan line(s); reflectivity split from target12: kept 246/544 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,9,target12,saved,256,plane,"aspect 0.81; 256 face pts, depth gate ±116 mm; reflectivity split from target11: kept 421/667 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test9_ruby.bag
+ruby,10,target1,saved,490,plane,"aspect 0.97; 490 face pts, depth gate ±22 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target2,saved,540,plane,"aspect 0.93; 540 face pts, depth gate ±21 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target3,saved,223,plane,"aspect 0.77; 223 face pts, depth gate ±42 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target4,saved,226,plane,"aspect 0.81; 226 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target5,saved,114,plane,"aspect 0.86; 114 face pts, depth gate ±81 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target6,saved,107,plane,"aspect 0.91; 107 face pts, depth gate ±50 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target7,saved,71,plane,"aspect 0.31; 71 face pts, depth gate ±112 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target8,saved,127,plane,"aspect 0.74; 127 face pts, depth gate ±85 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target9,saved,103,plane,"aspect 0.90; 103 face pts, depth gate ±89 mm",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target10,saved,60,plane,"aspect 0.81; 60 face pts, depth gate ±71 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target11,saved,170,plane,"aspect 0.85; 170 face pts, depth gate ±132 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 199/673 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,10,target12,saved,168,plane,"aspect 0.97; 168 face pts, depth gate ±166 mm, dropped 3 post/edge scan line(s); reflectivity split from target11: kept 416/544 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test10_ruby.bag
+ruby,11,target1,saved,1013,plane,"aspect 0.92; 1013 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target2,saved,758,plane,"aspect 0.94; 758 face pts, depth gate ±30 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target3,saved,232,plane,"aspect 0.78; 232 face pts, depth gate ±39 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target4,saved,265,plane,"aspect 0.73; 265 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target5,saved,108,plane,"aspect 0.78; 108 face pts, depth gate ±130 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target6,saved,161,plane,"aspect 0.73; 161 face pts, depth gate ±88 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target7,saved,90,plane,"aspect 0.60; 90 face pts, depth gate ±74 mm",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target8,saved,113,plane,"aspect 0.74; 113 face pts, depth gate ±104 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target9,saved,87,plane,"aspect 0.81; 87 face pts, depth gate ±107 mm, dropped 1 post/edge scan line(s), excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target10,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target11,saved,244,plane,"aspect 0.83; 244 face pts, depth gate ±104 mm; reflectivity split from target12: kept 389/1246 brightest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,11,target12,saved,290,plane,"aspect 0.91; 290 face pts, depth gate ±93 mm; reflectivity split from target11: kept 935/1324 dimmest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test11_ruby.bag
+ruby,12,target1,saved,473,plane,"aspect 0.87; 473 face pts, depth gate ±19 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target2,saved,771,plane,"aspect 0.93; 771 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target3,saved,141,plane,"aspect 0.89; 141 face pts, depth gate ±33 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target4,saved,223,plane,"aspect 0.73; 223 face pts, depth gate ±41 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target5,saved,129,plane,"aspect 0.71; 129 face pts, depth gate ±91 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target6,saved,130,plane,"aspect 0.90; 130 face pts, depth gate ±68 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target7,saved,156,plane,"aspect 0.95; 156 face pts, depth gate ±111 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target8,saved,120,plane,"aspect 0.90; 120 face pts, depth gate ±86 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target9,saved,103,plane,"aspect 0.76; 103 face pts, depth gate ±88 mm",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target10,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target11,saved,179,plane,"aspect 0.84; 179 face pts, depth gate ±95 mm; reflectivity split from target12: kept 323/911 brightest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,12,target12,saved,318,plane,"aspect 0.90; 318 face pts, depth gate ±106 mm; reflectivity split from target11: kept 655/978 dimmest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test12_ruby.bag
+ruby,13,target1,saved,542,plane,"aspect 0.97; 542 face pts, depth gate ±24 mm, dropped 5 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target2,saved,1016,plane,"aspect 0.94; 1016 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target3,saved,269,plane,"aspect 0.75; 269 face pts, depth gate ±46 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target4,saved,254,plane,"aspect 0.82; 254 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target5,saved,86,plane,"aspect 0.75; 86 face pts, depth gate ±65 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target6,saved,124,plane,"aspect 0.82; 124 face pts, depth gate ±92 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target7,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 87 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target8,saved,90,plane,"aspect 0.85; 90 face pts, depth gate ±61 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target9,saved,111,plane,"aspect 0.72; 111 face pts, depth gate ±120 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target10,saved,94,plane,"aspect 0.93; 94 face pts, depth gate ±75 mm",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target11,saved,146,plane,"aspect 0.73; 146 face pts, depth gate ±89 mm, dropped 2 post/edge scan line(s); reflectivity split from target12: kept 395/1044 brightest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,13,target12,saved,329,plane,"aspect 0.87; 329 face pts, depth gate ±125 mm; reflectivity split from target11: kept 650/1045 dimmest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test13_ruby.bag
+ruby,14,target1,saved,743,plane,"aspect 0.91; 743 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target2,saved,629,plane,"aspect 0.94; 629 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target3,saved,229,plane,"aspect 0.77; 229 face pts, depth gate ±41 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target4,saved,240,plane,"aspect 0.98; 240 face pts, depth gate ±47 mm",/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target5,saved,74,plane,"aspect 0.77; 74 face pts, depth gate ±52 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target6,saved,124,plane,"aspect 0.95; 124 face pts, depth gate ±110 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target7,skipped,0,,no points left after plane fitting,/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target11,skipped,0,,no points left after plane fitting; reflectivity split from target12: kept 72/476 brightest pts by intensity,/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,14,target12,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field); reflectivity split from target11: kept 41/73 dimmest pts by intensity,/home/quin/data/12_target_test/sept_28_2026/test14_ruby.bag
+ruby,16,target1,saved,578,plane,"aspect 0.96; 578 face pts, depth gate ±23 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target2,saved,737,plane,"aspect 0.96; 737 face pts, depth gate ±30 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target3,saved,304,plane,"aspect 0.79; 304 face pts, depth gate ±64 mm",/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target4,saved,299,plane,"aspect 0.79; 299 face pts, depth gate ±57 mm",/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target5,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target6,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.147 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target7,skipped,0,,no coherent target surface: depth scatter sigma 148 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target8,skipped,0,,no coherent target surface: depth scatter sigma 126 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target9,skipped,0,,no coherent target surface: depth scatter sigma 170 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: no coherent target surface: depth scatter sigma 358 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target10,skipped,0,,no coherent target surface: depth scatter sigma 125 mm fills the +/-250 mm search band; retry without 1 clutter scan line(s) also failed: plane fit rejected: only 3 target points (plane needs 10); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target11,skipped,0,,no coherent target surface: depth scatter sigma 118 mm fills the +/-250 mm search band; no reflectivity split from target12 (intensity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,16,target12,skipped,0,,no coherent target surface: depth scatter sigma 108 mm fills the +/-250 mm search band; no reflectivity split from target11 (intensity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/oct_5_2026/test16_ruby.bag
+ruby,17,target1,saved,583,plane,"aspect 0.92; 583 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target2,saved,688,plane,"aspect 0.94; 688 face pts, depth gate ±27 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target3,saved,257,plane,"aspect 0.83; 257 face pts, depth gate ±52 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target4,saved,290,plane,"aspect 0.89; 290 face pts, depth gate ±51 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target5,saved,120,plane,"aspect 0.72; 120 face pts, depth gate ±102 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target6,saved,121,plane,"aspect 0.81; 121 face pts, depth gate ±101 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target7,saved,129,plane,"aspect 0.81; 129 face pts, depth gate ±77 mm",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target8,saved,16,plane,"aspect 0.43; 16 face pts, depth gate ±63 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target9,saved,57,plane,"aspect 0.48; 57 face pts, depth gate ±86 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target10,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target11,saved,114,plane,"aspect 0.80; 114 face pts, depth gate ±77 mm, dropped 2 post/edge scan line(s); reflectivity split from target12: kept 295/1059 brightest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,17,target12,saved,240,plane,"aspect 0.72; 240 face pts, depth gate ±134 mm; reflectivity split from target11: kept 409/467 dimmest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test17_ruby.bag
+ruby,18,target1,saved,516,plane,"aspect 0.96; 516 face pts, depth gate ±23 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target2,saved,733,plane,"aspect 0.93; 733 face pts, depth gate ±30 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target3,saved,162,plane,"aspect 0.64; 162 face pts, depth gate ±48 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target4,saved,282,plane,"aspect 0.77; 282 face pts, depth gate ±52 mm",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target5,saved,76,plane,"aspect 0.34; 76 face pts, depth gate ±151 mm, dropped 7 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target6,saved,160,plane,"aspect 0.82; 160 face pts, depth gate ±95 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target7,saved,136,plane,"aspect 0.65; 136 face pts, depth gate ±94 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target8,saved,101,plane,"aspect 0.69; 101 face pts, depth gate ±196 mm, dropped 2 post/edge scan line(s), excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target9,saved,76,plane,"aspect 0.79; 76 face pts, depth gate ±108 mm, excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target10,saved,44,plane,"aspect 0.30; 44 face pts, depth gate ±60 mm, dropped 1 post/edge scan line(s), excluded 2 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target11,saved,61,plane,"aspect 0.37; 61 face pts, depth gate ±79 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 266/583 brightest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,18,target12,saved,152,plane,"aspect 0.48; 152 face pts, depth gate ±121 mm; reflectivity split from target11: kept 320/586 dimmest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test18_ruby.bag
+ruby,19,target1,saved,525,plane,"aspect 0.95; 525 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target2,saved,871,plane,"aspect 0.93; 871 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target3,saved,238,plane,"aspect 0.97; 238 face pts, depth gate ±61 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target4,saved,298,plane,"aspect 0.73; 298 face pts, depth gate ±58 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target5,saved,126,plane,"aspect 0.90; 126 face pts, depth gate ±115 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target6,saved,79,plane,"aspect 0.59; 79 face pts, depth gate ±109 mm, dropped 5 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target7,saved,126,plane,"aspect 0.66; 126 face pts, depth gate ±80 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target8,saved,123,plane,"aspect 0.82; 123 face pts, depth gate ±80 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target9,saved,123,plane,"aspect 0.96; 123 face pts, depth gate ±115 mm",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target10,saved,85,plane,"aspect 0.72; 85 face pts, depth gate ±92 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target11,saved,167,plane,"aspect 0.81; 167 face pts, depth gate ±96 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 431/1098 brightest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,19,target12,saved,231,plane,"aspect 0.78; 231 face pts, depth gate ±225 mm, dropped 2 post/edge scan line(s); reflectivity split from target11: kept 620/1004 dimmest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test19_ruby.bag
+ruby,21,target1,saved,524,plane,"aspect 0.95; 524 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target2,saved,2192,plane,"aspect 0.94; 2192 face pts, depth gate ±78 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target3,saved,291,plane,"aspect 0.79; 291 face pts, depth gate ±54 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target4,saved,272,plane,"aspect 0.77; 272 face pts, depth gate ±67 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target5,saved,148,plane,"aspect 0.75; 148 face pts, depth gate ±127 mm, dropped 4 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target6,saved,198,plane,"aspect 0.85; 198 face pts, depth gate ±85 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target7,saved,166,plane,"aspect 0.80; 166 face pts, depth gate ±109 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target8,saved,213,plane,"aspect 0.80; 213 face pts, depth gate ±144 mm",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target9,saved,118,plane,"aspect 0.58; 118 face pts, depth gate ±127 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target10,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.139 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target11,saved,204,plane,"aspect 0.88; 204 face pts, depth gate ±105 mm; reflectivity split from target12: kept 210/700 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,21,target12,saved,253,plane,"aspect 0.86; 253 face pts, depth gate ±96 mm, dropped 2 post/edge scan line(s); reflectivity split from target11: kept 490/700 dimmest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test21_ruby.bag
+ruby,22,target1,saved,1705,plane,"aspect 0.96; 1705 face pts, depth gate ±65 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target2,saved,830,plane,"aspect 0.95; 830 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target3,saved,226,plane,"aspect 0.97; 226 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target4,saved,240,plane,"aspect 0.80; 240 face pts, depth gate ±53 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target5,saved,120,plane,"aspect 0.77; 120 face pts, depth gate ±105 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target6,saved,73,plane,"aspect 0.80; 73 face pts, depth gate ±93 mm, dropped 6 post/edge scan line(s), excluded 1 depth-incoherent clutter scan line(s) after first fit failed",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target7,saved,71,plane,"aspect 0.79; 71 face pts, depth gate ±62 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target8,saved,181,plane,"aspect 0.93; 181 face pts, depth gate ±113 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target9,saved,96,plane,"aspect 0.87; 96 face pts, depth gate ±105 mm",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target10,saved,50,plane,"aspect 0.50; 50 face pts, depth gate ±83 mm, dropped 3 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target11,saved,291,plane,"aspect 0.82; 291 face pts, depth gate ±157 mm; reflectivity split from target12: kept 291/619 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,22,target12,saved,390,plane,"aspect 0.91; 390 face pts, depth gate ±131 mm; reflectivity split from target11: kept 599/890 dimmest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test22_ruby.bag
+ruby,23,target1,saved,938,plane,"aspect 0.97; 938 face pts, depth gate ±37 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target2,saved,839,plane,"aspect 0.96; 839 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target3,saved,291,plane,"aspect 0.90; 291 face pts, depth gate ±48 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target4,saved,231,plane,"aspect 0.67; 231 face pts, depth gate ±45 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target5,saved,183,plane,"aspect 0.92; 183 face pts, depth gate ±140 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target6,saved,80,plane,"aspect 0.61; 80 face pts, depth gate ±54 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target7,saved,89,plane,"aspect 0.78; 89 face pts, depth gate ±171 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target8,saved,160,plane,"aspect 0.86; 160 face pts, depth gate ±106 mm",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target9,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.192 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target10,skipped,0,,plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target11,saved,97,plane,"aspect 0.60; 97 face pts, depth gate ±105 mm, dropped 3 post/edge scan line(s); reflectivity split from target12: kept 172/570 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,23,target12,saved,245,plane,"aspect 0.74; 245 face pts, depth gate ±116 mm, dropped 1 post/edge scan line(s); reflectivity split from target11: kept 271/293 dimmest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test23_ruby.bag
+ruby,24,target1,saved,535,plane,"aspect 0.96; 535 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target2,saved,678,plane,"aspect 0.87; 678 face pts, depth gate ±28 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target3,saved,235,plane,"aspect 0.84; 235 face pts, depth gate ±42 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target4,saved,261,plane,"aspect 0.85; 261 face pts, depth gate ±48 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target5,saved,68,plane,"aspect 0.56; 68 face pts, depth gate ±86 mm, dropped 8 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target6,saved,214,plane,"aspect 0.92; 214 face pts, depth gate ±80 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target7,saved,119,plane,"aspect 0.89; 119 face pts, depth gate ±91 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target8,saved,192,plane,"aspect 0.71; 192 face pts, depth gate ±143 mm",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target9,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target10,skipped,0,,plane fit rejected: target points nearly collinear (in-plane aspect 0.000 < 0.2); ring-line fallback unavailable (no ring/line_index/channel/laser_id field),/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target11,saved,157,plane,"aspect 0.49; 157 face pts, depth gate ±103 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 166/560 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,24,target12,saved,234,plane,"aspect 0.68; 234 face pts, depth gate ±124 mm; no reflectivity split from target11 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test24_ruby.bag
+ruby,25,target1,saved,526,plane,"aspect 0.92; 526 face pts, depth gate ±21 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target2,saved,663,plane,"aspect 0.94; 663 face pts, depth gate ±26 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target3,saved,289,plane,"aspect 0.78; 289 face pts, depth gate ±48 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target4,saved,282,plane,"aspect 0.79; 282 face pts, depth gate ±47 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target5,saved,124,plane,"aspect 0.85; 124 face pts, depth gate ±86 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target6,saved,218,plane,"aspect 0.86; 218 face pts, depth gate ±126 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target7,saved,118,plane,"aspect 0.78; 118 face pts, depth gate ±87 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target8,saved,198,plane,"aspect 0.75; 198 face pts, depth gate ±127 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target9,saved,65,plane,"aspect 0.60; 65 face pts, depth gate ±171 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target10,saved,96,plane,"aspect 0.86; 96 face pts, depth gate ±66 mm",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target11,saved,235,plane,"aspect 0.80; 235 face pts, depth gate ±124 mm, dropped 1 post/edge scan line(s); reflectivity split from target12: kept 256/674 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+ruby,25,target12,saved,329,plane,"aspect 0.91; 329 face pts, depth gate ±133 mm; reflectivity split from target11: kept 384/585 dimmest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test25_ruby.bag
+vlp32_strongest,1,target1,saved,3659,plane,"aspect 0.90; 3659 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target2,saved,6988,plane,"aspect 0.86; 6988 face pts, depth gate ±60 mm",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target3,saved,1008,plane,"aspect 0.86; 1008 face pts, depth gate ±20 mm",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target4,saved,1213,plane,"aspect 0.93; 1213 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target5,saved,321,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.118 < 0.2); 321 face pts, depth gate ±53 mm",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target6,saved,337,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.066 < 0.2); 337 face pts, depth gate ±32 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target7,skipped,0,,"no coherent target surface: depth scatter sigma 108 mm fills the +/-250 mm search band; retry without 2 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.188 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target8,saved,215,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.058 < 0.2); 215 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target9,skipped,0,,no coherent target surface: depth scatter sigma 95 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target10,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.114 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target11,saved,9,beam,"1 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 9 face pts, depth gate ±80 mm; no reflectivity split from target12 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,1,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test1_vlp32_strongest.bag
+vlp32_strongest,2,target1,saved,3690,plane,"aspect 0.90; 3690 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target2,saved,4149,plane,"aspect 0.87; 4149 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target3,saved,855,plane,"aspect 0.86; 855 face pts, depth gate ±19 mm",/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target4,saved,1149,plane,"aspect 0.93; 1149 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target5,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target6,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target7,skipped,0,,no coherent target surface: depth scatter sigma 91 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target8,saved,263,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 263 face pts, depth gate ±206 mm",/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target9,skipped,0,,no coherent target surface: depth scatter sigma 105 mm fills the +/-250 mm search band,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,2,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag
+vlp32_strongest,5,target1,saved,4251,plane,"aspect 0.86; 4251 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target2,saved,3683,plane,"aspect 0.95; 3683 face pts, depth gate ±27 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target3,saved,1030,plane,"aspect 0.88; 1030 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target4,saved,1203,plane,"aspect 0.87; 1203 face pts, depth gate ±33 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target5,saved,461,plane,"aspect 0.84; 461 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target6,saved,652,plane,"aspect 0.96; 652 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target7,saved,157,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.066 < 0.2); 157 face pts, depth gate ±41 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target8,saved,559,plane,"aspect 0.67; 559 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target9,saved,323,plane,"aspect 0.46; 323 face pts, depth gate ±36 mm",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target10,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.123 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target11,saved,526,plane,"aspect 0.89; 526 face pts, depth gate ±31 mm; reflectivity split from target12: kept 611/1638 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,5,target12,saved,771,plane,"aspect 0.90; 771 face pts, depth gate ±142 mm; reflectivity split from target11: kept 916/1421 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test5_vlp32_strongest.bag
+vlp32_strongest,6,target1,saved,3951,plane,"aspect 0.90; 3951 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target2,saved,3681,plane,"aspect 0.91; 3681 face pts, depth gate ±22 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target3,saved,1004,plane,"aspect 0.88; 1004 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target4,saved,832,plane,"aspect 0.67; 832 face pts, depth gate ±25 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target5,saved,482,plane,"aspect 0.84; 482 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target6,saved,356,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.157 < 0.2); 356 face pts, depth gate ±53 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target8,saved,282,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.123 < 0.2); 282 face pts, depth gate ±51 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target9,saved,173,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.196 < 0.2); 173 face pts, depth gate ±62 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target10,saved,277,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.131 < 0.2); 277 face pts, depth gate ±59 mm",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target11,saved,304,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.043 < 0.2); 304 face pts, depth gate ±38 mm; reflectivity split from target12: kept 344/943 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,6,target12,saved,463,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.125 < 0.2); 463 face pts, depth gate ±93 mm; reflectivity split from target11: kept 605/949 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test6_vlp32_strongest.bag
+vlp32_strongest,7,target1,saved,4013,plane,"aspect 0.88; 4013 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target2,saved,4399,plane,"aspect 0.85; 4399 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target3,saved,630,plane,"aspect 0.67; 630 face pts, depth gate ±20 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target4,saved,770,plane,"aspect 0.70; 770 face pts, depth gate ±23 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target5,saved,441,plane,"aspect 0.74; 441 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target6,saved,286,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.054 < 0.2); 286 face pts, depth gate ±24 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target7,saved,360,plane,"aspect 0.59; 360 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target8,saved,27,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.119 < 0.2); 27 face pts, depth gate ±54 mm",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target9,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target10,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.117 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target11,saved,296,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.043 < 0.2); 296 face pts, depth gate ±38 mm; reflectivity split from target12: kept 315/976 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,7,target12,skipped,0,,no coherent target surface: depth scatter sigma 130 mm fills the +/-250 mm search band; reflectivity split from target11: kept 661/976 dimmest pts by intensity,/home/quin/data/12_target_test/sept_27_2026/test7_vlp32_strongest.bag
+vlp32_strongest,8,target1,saved,3929,plane,"aspect 0.88; 3929 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target2,saved,4348,plane,"aspect 0.88; 4348 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target3,saved,949,plane,"aspect 0.86; 949 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target4,saved,1211,plane,"aspect 0.92; 1211 face pts, depth gate ±34 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target5,saved,460,plane,"aspect 0.76; 460 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target6,saved,709,plane,"aspect 0.97; 709 face pts, depth gate ±85 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target7,saved,359,plane,"aspect 0.64; 359 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target8,saved,278,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.104 < 0.2); 278 face pts, depth gate ±51 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target9,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.054 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target10,saved,268,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.196 < 0.2); 268 face pts, depth gate ±64 mm",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target11,saved,315,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.097 < 0.2); 315 face pts, depth gate ±98 mm; reflectivity split from target12: kept 318/810 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,8,target12,saved,330,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.062 < 0.2); 330 face pts, depth gate ±69 mm; reflectivity split from target11: kept 432/646 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test8_vlp32_strongest.bag
+vlp32_strongest,9,target1,saved,3882,plane,"aspect 0.88; 3882 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target2,saved,4433,plane,"aspect 0.87; 4433 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target3,saved,993,plane,"aspect 0.88; 993 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target4,saved,1147,plane,"aspect 0.85; 1147 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target5,saved,471,plane,"aspect 0.77; 471 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target6,saved,596,plane,"aspect 0.96; 596 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target7,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.063 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target8,saved,317,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.085 < 0.2); 317 face pts, depth gate ±39 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target9,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.180 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target10,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.126 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target11,saved,577,plane,"aspect 0.91; 577 face pts, depth gate ±37 mm; reflectivity split from target12: kept 634/1701 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,9,target12,saved,416,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.144 < 0.2); 416 face pts, depth gate ±117 mm, dropped 1 post/edge scan line(s); reflectivity split from target11: kept 959/1272 dimmest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test9_vlp32_strongest.bag
+vlp32_strongest,10,target1,saved,3045,plane,"aspect 0.93; 3045 face pts, depth gate ±21 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target2,saved,4507,plane,"aspect 0.87; 4507 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target3,saved,997,plane,"aspect 0.89; 997 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target4,saved,1246,plane,"aspect 0.93; 1246 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target5,saved,468,plane,"aspect 0.80; 468 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target6,saved,679,plane,"aspect 0.97; 679 face pts, depth gate ±40 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target7,saved,343,plane,"aspect 0.57; 343 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target8,saved,558,plane,"aspect 0.76; 558 face pts, depth gate ±43 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target9,saved,209,plane,"aspect 0.41; 209 face pts, depth gate ±53 mm",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target10,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target11,saved,249,plane,"aspect 0.44; 249 face pts, depth gate ±25 mm; reflectivity split from target12: kept 250/1260 brightest pts by intensity",/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,10,target12,skipped,0,,no coherent target surface: depth scatter sigma 108 mm fills the +/-250 mm search band; no reflectivity split from target11 (intensity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/sept_27_2026/test10_vlp32_strongest.bag
+vlp32_strongest,11,target1,saved,5437,plane,"aspect 0.96; 5437 face pts, depth gate ±35 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target2,saved,4341,plane,"aspect 0.88; 4341 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target3,saved,984,plane,"aspect 0.89; 984 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target4,saved,1254,plane,"aspect 0.91; 1254 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target5,saved,331,plane,"aspect 0.83; 331 face pts, depth gate ±37 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target6,saved,475,plane,"aspect 0.75; 475 face pts, depth gate ±43 mm",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target8,saved,37,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.111 < 0.2); 37 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,11,target12,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.136 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits); retry without 1 clutter scan line(s) also failed: plane fit rejected: target points nearly collinear (in-plane aspect 0.136 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits); reflectivity split from target11: kept 167/375 dimmest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test11_vlp32_strongest.bag
+vlp32_strongest,12,target1,saved,4285,plane,"aspect 0.87; 4285 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target2,saved,4446,plane,"aspect 0.89; 4446 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target3,saved,972,plane,"aspect 0.89; 972 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target4,saved,1279,plane,"aspect 0.93; 1279 face pts, depth gate ±31 mm",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target5,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target6,saved,135,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.191 < 0.2); 135 face pts, depth gate ±33 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target11,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits); no reflectivity split from target12 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,12,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test12_vlp32_strongest.bag
+vlp32_strongest,13,target1,saved,3539,plane,"aspect 0.94; 3539 face pts, depth gate ±22 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target2,saved,4351,plane,"aspect 0.88; 4351 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target3,saved,974,plane,"aspect 0.88; 974 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target4,saved,1470,plane,"aspect 0.88; 1470 face pts, depth gate ±74 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target5,saved,453,plane,"aspect 0.76; 453 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target6,saved,593,plane,"aspect 0.87; 593 face pts, depth gate ±35 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target7,saved,177,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.100 < 0.2); 177 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target8,saved,349,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 349 face pts, depth gate ±146 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target9,saved,120,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.082 < 0.2); 120 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target10,saved,268,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.113 < 0.2); 268 face pts, depth gate ±50 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target11,saved,548,plane,"aspect 0.89; 548 face pts, depth gate ±54 mm; reflectivity split from target12: kept 618/1662 brightest pts by intensity",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,13,target12,saved,489,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.193 < 0.2); 489 face pts, depth gate ±138 mm, dropped 1 post/edge scan line(s); no reflectivity split from target11 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/sept_28_2026/test13_vlp32_strongest.bag
+vlp32_strongest,14,target1,saved,4037,plane,"aspect 0.85; 4037 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target2,saved,4189,plane,"aspect 0.89; 4189 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target3,saved,980,plane,"aspect 0.89; 980 face pts, depth gate ±20 mm",/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target4,saved,1186,plane,"aspect 0.89; 1186 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target5,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target6,saved,21,beam,"1 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 21 face pts, depth gate ±29 mm",/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,14,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/sept_28_2026/test14_vlp32_strongest.bag
+vlp32_strongest,16,target1,saved,4348,plane,"aspect 0.85; 4348 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target2,saved,4244,plane,"aspect 0.89; 4244 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target3,saved,1054,plane,"aspect 0.87; 1054 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target4,saved,843,plane,"aspect 0.67; 843 face pts, depth gate ±29 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target5,saved,584,plane,"aspect 0.70; 584 face pts, depth gate ±236 mm",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target6,saved,745,plane,"aspect 0.90; 745 face pts, depth gate ±69 mm",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target7,saved,15,beam,"1 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 15 face pts, depth gate ±69 mm",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target8,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits); retry without 1 clutter scan line(s) also failed: plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target11,skipped,0,,no coherent target surface: depth scatter sigma 146 mm fills the +/-250 mm search band; no reflectivity split from target12 (intensity not bimodal: neighbour not in the search box),/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,16,target12,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits); reflectivity split from target11: kept 94/718 dimmest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test16_vlp32_strongest.bag
+vlp32_strongest,17,target1,saved,3649,plane,"aspect 0.89; 3649 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target2,saved,4415,plane,"aspect 0.87; 4415 face pts, depth gate ±30 mm",/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target3,saved,928,plane,"aspect 0.84; 928 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target4,saved,941,plane,"aspect 0.65; 941 face pts, depth gate ±61 mm",/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target5,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target6,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,17,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test17_vlp32_strongest.bag
+vlp32_strongest,18,target1,saved,3320,plane,"aspect 0.92; 3320 face pts, depth gate ±20 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target2,saved,4170,plane,"aspect 0.86; 4170 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target3,saved,983,plane,"aspect 0.86; 983 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target4,saved,1102,plane,"aspect 0.83; 1102 face pts, depth gate ±37 mm",/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target5,skipped,0,,only 6 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target6,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target11,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,18,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_5_2026/test18_vlp32_strongest.bag
+vlp32_strongest,19,target1,saved,4150,plane,"aspect 0.89; 4150 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target2,saved,4406,plane,"aspect 0.87; 4406 face pts, depth gate ±36 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target3,saved,977,plane,"aspect 0.89; 977 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target4,saved,1230,plane,"aspect 0.90; 1230 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target5,saved,435,plane,"aspect 0.77; 435 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target6,saved,781,plane,"aspect 0.93; 781 face pts, depth gate ±66 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target7,saved,227,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.093 < 0.2); 227 face pts, depth gate ±38 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target8,saved,335,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.115 < 0.2); 335 face pts, depth gate ±49 mm",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target9,saved,19,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.117 < 0.2); 19 face pts, depth gate ±46 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target10,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target11,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.039 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits); reflectivity split from target12: kept 664/1705 brightest pts by intensity",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,19,target12,saved,649,plane,"aspect 0.81; 649 face pts, depth gate ±64 mm; no reflectivity split from target11 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_5_2026/test19_vlp32_strongest.bag
+vlp32_strongest,21,target1,saved,4343,plane,"aspect 0.89; 4343 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target2,saved,4203,plane,"aspect 0.86; 4203 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target3,saved,1231,plane,"aspect 0.92; 1231 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target4,saved,757,plane,"aspect 0.67; 757 face pts, depth gate ±24 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target5,saved,398,plane,"aspect 0.74; 398 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target6,saved,668,plane,"aspect 0.78; 668 face pts, depth gate ±92 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target7,saved,182,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.103 < 0.2); 182 face pts, depth gate ±32 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target8,saved,628,plane,"aspect 0.71; 628 face pts, depth gate ±57 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target9,saved,175,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.107 < 0.2); 175 face pts, depth gate ±39 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target10,saved,41,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 41 face pts, depth gate ±212 mm",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target11,saved,306,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.083 < 0.2); 306 face pts, depth gate ±68 mm; reflectivity split from target12: kept 337/946 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,21,target12,saved,416,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.090 < 0.2); 416 face pts, depth gate ±92 mm; reflectivity split from target11: kept 556/612 dimmest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test21_vlp32_strongest.bag
+vlp32_strongest,22,target1,saved,4141,plane,"aspect 0.89; 4141 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target2,saved,4451,plane,"aspect 0.87; 4451 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target3,saved,1005,plane,"aspect 0.90; 1005 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target4,saved,1215,plane,"aspect 0.88; 1215 face pts, depth gate ±25 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target5,saved,430,plane,"aspect 0.79; 430 face pts, depth gate ±24 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target6,saved,636,plane,"aspect 0.90; 636 face pts, depth gate ±76 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target7,saved,23,beam,"1 fixed beam(s); plane rejected: target points nearly collinear (in-plane aspect 0.083 < 0.2); 23 face pts, depth gate ±49 mm",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target8,saved,357,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 357 face pts, depth gate ±110 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target9,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.178 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target10,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.117 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target11,saved,551,plane,"aspect 0.88; 551 face pts, depth gate ±43 mm; reflectivity split from target12: kept 602/1720 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,22,target12,saved,882,plane,"aspect 0.97; 882 face pts, depth gate ±245 mm; reflectivity split from target11: kept 1118/1720 dimmest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test22_vlp32_strongest.bag
+vlp32_strongest,23,target1,saved,4361,plane,"aspect 0.94; 4361 face pts, depth gate ±33 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target2,saved,4260,plane,"aspect 0.88; 4260 face pts, depth gate ±26 mm",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target3,saved,1046,plane,"aspect 0.86; 1046 face pts, depth gate ±23 mm",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target4,saved,1110,plane,"aspect 0.90; 1110 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target5,saved,194,plane,"aspect 0.36; 194 face pts, depth gate ±27 mm",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target6,saved,248,plane,"aspect 0.37; 248 face pts, depth gate ±42 mm",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target11,saved,183,plane,"aspect 0.31; 183 face pts, depth gate ±197 mm; no reflectivity split from target12 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,23,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test23_vlp32_strongest.bag
+vlp32_strongest,24,target1,saved,5615,plane,"aspect 0.87; 5615 face pts, depth gate ±34 mm",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target2,saved,4971,plane,"aspect 0.86; 4971 face pts, depth gate ±33 mm",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target3,saved,980,plane,"aspect 0.88; 980 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target4,saved,1369,plane,"aspect 0.91; 1369 face pts, depth gate ±44 mm",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target5,saved,257,plane,"aspect 0.56; 257 face pts, depth gate ±21 mm",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target6,saved,406,plane,"aspect 0.58; 406 face pts, depth gate ±39 mm",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target7,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target8,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target9,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target10,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target11,saved,314,plane,"aspect 0.40; 314 face pts, depth gate ±178 mm; no reflectivity split from target12 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,24,target12,skipped,0,,only 0 points in the search box,/home/quin/data/12_target_test/oct_14_2026/test24_vlp32_strongest.bag
+vlp32_strongest,25,target1,saved,4720,plane,"aspect 0.90; 4720 face pts, depth gate ±28 mm",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target2,saved,5647,plane,"aspect 0.94; 5647 face pts, depth gate ±39 mm",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target3,saved,695,plane,"aspect 0.66; 695 face pts, depth gate ±27 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target4,saved,770,plane,"aspect 0.67; 770 face pts, depth gate ±24 mm, dropped 2 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target5,saved,420,plane,"aspect 0.74; 420 face pts, depth gate ±22 mm",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target6,saved,323,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.144 < 0.2); 323 face pts, depth gate ±65 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target7,skipped,0,,"plane fit rejected: target points nearly collinear (in-plane aspect 0.073 < 0.2); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target8,saved,238,ring_line,"1 channel(s); plane rejected: target points nearly collinear (in-plane aspect 0.184 < 0.2); 238 face pts, depth gate ±57 mm, dropped 1 post/edge scan line(s)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target9,saved,31,beam,"1 fixed beam(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 31 face pts, depth gate ±64 mm",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target10,skipped,0,,"plane fit rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); ring-line fallback failed (no channel had >= 5 points at >= 3 distinct azimuths, and no fixed beam had >= 5 hits)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target11,saved,261,plane,"aspect 0.45; 261 face pts, depth gate ±25 mm; reflectivity split from target12: kept 261/1358 brightest pts by intensity",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag
+vlp32_strongest,25,target12,saved,235,ring_line,"1 channel(s); plane rejected: plane through the points is edge-on to the sensor (incidence 90 deg > 75); 235 face pts, depth gate ±142 mm, excluded 1 depth-incoherent clutter scan line(s) after first fit failed; no reflectivity split from target11 (intensity not bimodal: neighbour not in the search box)",/home/quin/data/12_target_test/oct_14_2026/test25_vlp32_strongest.bag

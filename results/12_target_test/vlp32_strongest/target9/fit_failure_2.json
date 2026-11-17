@@ -1,0 +1,9 @@
+{
+  "lidar_id": "vlp32_strongest",
+  "target": "target9",
+  "trial": 2,
+  "failure_kind": "fit_failed",
+  "reason": "no coherent target surface: depth scatter sigma 105 mm fills the +/-250 mm search band",
+  "bag": "/home/quin/data/12_target_test/sept_24_2026/test2_vlp32_strongest.bag",
+  "recorded": "2026-11-17T05:35:26"
+}
